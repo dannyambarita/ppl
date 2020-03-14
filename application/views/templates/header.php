@@ -28,7 +28,7 @@
                 Sign Up
             </button>
 
-              <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+            <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -38,7 +38,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  
+                                                                                  
                 <form action="" method="">
                   <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                  <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
                 </div>
               </div>
             </div>
