@@ -25,7 +25,66 @@
 
         <div class="col-2">
           <img src="assets/user.svg" alt="" width="23px">
-          <a href="#" style="color: white; font-weight:bold;">SIGN IN</a>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModal">
+                Sign in
+            </button>
+
+                      <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="signin">Sign In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <form action="" method="">
+                  <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="nama">Umur</label>
+                    <input type="number" class="form-control" id="umur" name="umur">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="jeniskelamin">Jenis Kelamin</label>
+                    <select class="form-control" id="jeniskelamin" name="jeniskelamin">
+                      <option value="laki">Laki-Laki</option>
+                      <option value="perempuan">Perempuan</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="nama">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                  
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="nama">Password</label>
+                    <input type="text" class="form-control" id="password" name="password">
+                    </div>
+
+                    
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
