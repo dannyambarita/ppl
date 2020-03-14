@@ -24,15 +24,15 @@
         </div>
 
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModal">
-        <div class="col-0">
           <img src="assets/user.svg" alt="" width="23px">
-                Sign in
+                Sign Up
             </button>
+
               <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="signin">Sign In</h5>
+                  <h5 class="modal-title" id="signin">Sign Up</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -72,24 +72,16 @@
                     <label for="nama">Password</label>
                     <input type="text" class="form-control" id="password" name="password">
                     </div>
-
-                    
-
-
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Sign In</button>
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
                 </div>
               </div>
             </div>
-          </div>
+          </div> <pre>  </pre>
 
-        </div>
-      </div>
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
-        <div class="col-0">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
           <img src="assets/user.svg" alt="" width="23px">
                 Log in
             </button>
@@ -126,6 +118,8 @@
           </div>
 
         </div>
+      </div>
+      </div>
       </div>
 
       <div class="row">
