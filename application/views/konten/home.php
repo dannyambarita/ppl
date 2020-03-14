@@ -6,6 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
 
+    <div class="row">
+        <div class="col">
+          <center><img src="assets/kue.png" alt="" width="900px"></center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container" style="">
+      <div class="row">
+        <div class="col">
+          <center><p>WELCOME TO JON'S Boulangerie Patisserie</p></center>
+          <hr style="">
+        </div>
+      </div>
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   </head>
   <body>
@@ -137,11 +154,5 @@
     </div>
 
     <br>
-
-    <div class="container-fluid" style="">
-      <div class="row">
-        <div class="col-9">
-          <img src="assets/visit.png" alt="" width="1030px">
-        </div>
 
         

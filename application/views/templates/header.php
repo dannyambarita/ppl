@@ -35,15 +35,19 @@
           <p style="font-size: 77px; text-align: center; padding-top: 14px;">Jon's</p>
           <p style="text-align: center;">Boulangerie Patisserie</p>
         </div>
-      </div>
+      </div><br>
 
       <div class="row">
-        <div class="col-2">
+        <div class="col-1">
 
         </div>
 
         <div class="col-2">
-          <center><a href="#" style="color: black;">HOME</a></center>
+          <center><a href="<?= base_url(); ?>" style="color: black;">HOME</a></center>
+        </div>
+
+        <div class="col-2">
+          <center><a href="<?= base_url(); ?>roti" style="color: black;">OUR PRODUCT</a></center>
         </div>
 
         <div class="col-2">
@@ -61,23 +65,8 @@
 
         <div class="col-2">
 
-        </div>
+        </div><br><br>
 
       </div>
 
-      <div class="row">
-        <div class="col">
-          <center><img src="assets/kue.png" alt="" width="900px"></center>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="container" style="">
-      <div class="row">
-        <div class="col">
-          <center><p>WELCOME TO JON'S Boulangerie Patisserie</p></center>
-          <hr style="">
-        </div>
-      </div>
+      

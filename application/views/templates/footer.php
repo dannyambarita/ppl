@@ -6,6 +6,14 @@
   </body>
 </html>
 
+
+<div class="container-fluid" style="">
+      <div class="row">
+        <div class="col-9">
+          <img src="assets/visit.png" alt="" width="1030px">
+        </div>
+
+
 <div class="col-3" style="background-color:#E4E4E4;">
           <p style="text-align:left; font-size:26px; padding-top:150px;">COME & VISIT</p>
             <hr>
