@@ -7,7 +7,7 @@ class Roti extends CI_Controller {
     }
 
     public function index() {
-        $data['judul'] = "Website Jon's Bakery";
+        $data['judul'] = "Website Jon's Bakery - Our Product";
         $data['roti'] = $this->roti_model->getAllroti();
         $this->load->view('templates/header', $data);
         $this->load->view('roti/index');

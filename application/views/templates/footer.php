@@ -7,53 +7,6 @@
 </html>
 
 
-<div class="container-fluid" style="">
-      <div class="row">
-        <div class="col-9">
-          <img src="assets/visit.png" alt="" width="1030px">
-        </div>
-
-
-<div class="col-3" style="background-color:#E4E4E4;">
-          <p style="text-align:left; font-size:26px; padding-top:150px;">COME & VISIT</p>
-            <hr>
-            <p style="text-align: left;  font-weight: bold;">Jl. Jend. Sudirman No.55, Kota Bandar Lampung </p>
-            <p style="text-align: left;">Wednesday-Monday <br>6:30 AM - 9.30 PM </p>
-            <p style="text-align: left;">Tuesday <br>7.30 AM - 9.30 PM </p>
-              <a href="#" class="btn btn-primary" style="background-color:#31A38E">DIRECTION</a>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <center><p>RECENT TESTIMONIALS</p></center>
-          <hr>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4">
-          <center><p>Great place to chill, get away, eat some good food. there was quick, helpful, and friendly service. Feels similar to a cafe in Chicago I loved.</p>
-          <p style="font-weight:bold">— Courtney Arnold</p></center>
-        </div>
-
-        <div class="col-4">
-          <center><p>I can say this place does it for me. Service is consistently above par. Bring your appetite because portions are large.</p>
-          <p style="font-weight:bold">— Emmett Carrillo</p></center>
-        </div>
-
-        <div class="col-4">
-          <center><p>My favorite place for THE BEST almond croissant and chocolate almond croissant in SF!!! Def worth the wait!</p>
-          <p style="font-weight:bold"> — Virginia Griffin</p></center>
-        </div>
-      </div>
-    </div>
-
     <div class="container-fluid">
       <div class="row" style="background-color:#31A38E; padding-top: 20px;padding-bottom:20px;">
         <div class="col-4">
@@ -61,20 +14,20 @@
         </div>
 
         <div class="col-2">
-          <center><a href="#" style="color: white;">POLICY</a></center>
-          <center><a href="#" style="color: white;">Return</a></center>
-          <center><a href="#" style="color: white;">About Us</a></center>
-          <center><a href="#" style="color: white;">FAQ</a></center>
-          <center><a href="#" style="color: white;">Privacy Policy</a></center>
-          <center><a href="#" style="color: white;">Term & Conditions</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">POLICY</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">Return</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">About Us</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">FAQ</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">Privacy Policy</a></center>
+          <center><a href="<?= base_url(); ?>nanti" style="color: white;">Term & Conditions</a></center>
         </div>
 
         <div class="col-4">
           <center><p style="color:white; font-weight:bold;">HI, YOU LET'S SIGN IN <br> AND <br> GET 20% OFF YOUR FIRST ONLINE</p>
-          <img src="assets/twitter.svg" alt="" width="27px">
-          <img src="assets/facebook.svg" alt="" width="27px">
-          <img src="assets/instagram.svg" alt="" width="27px">
-          <img src="assets/google.svg" alt="" width="27px"> </center>
+          <a href="https://twitter.com/"><img src="assets/twitter.svg" alt="" width="27px"></a>
+          <a href="https://facebook.com/"><img src="assets/facebook.svg" alt="" width="27px"></a>
+          <a href="https://instagram.com/"><img src="assets/instagram.svg" alt="" width="27px"></a>
+          <a href="https://google.com/"><img src="assets/google.svg" alt="" width="27px"></a></center>
         </div>
 
         <div class="col-2">

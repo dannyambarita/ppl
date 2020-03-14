@@ -15,21 +15,20 @@
   <div class="container-fluid">
       <div class="row" style="background-color:#31A38E; padding-top: 4px;padding-bottom:4px;">
         <div class="col-10" >
-          <img src="assets/twitter.svg" alt="" width="27px">
-          <img src="assets/facebook.svg" alt="" width="27px">
-          <img src="assets/instagram.svg" alt="" width="27px">
-          <img src="assets/google.svg" alt="" width="27px">
+          <a href="https://twitter.com/"><img src="assets/twitter.svg" alt="" width="27px"></a>
+          <a href="https://facebook.com/"><img src="assets/facebook.svg" alt="" width="27px"></a>
+          <a href="https://instagram.com/"><img src="assets/instagram.svg" alt="" width="27px"></a>
+          <a href="https://google.com/"><img src="assets/google.svg" alt="" width="27px"></a>
           <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
 
         </div>
 
-        <div class="col-2">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModal">
+        <div class="col-0">
           <img src="assets/user.svg" alt="" width="23px">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModal">
                 Sign in
             </button>
-
-                      <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
+              <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="signin" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -60,14 +59,14 @@
                     </div>
 
                     <div class="form-group">
-                    <label for="nama">Username</label>
-                    <input type="text" class="form-control" id="username" name="username">
-                    </div>
-                  
-                    <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" name="email">
                     </div>
+
+                    <div class="form-group">
+                    <label for="nama">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                    </div>                  
 
                     <div class="form-group">
                     <label for="nama">Password</label>
@@ -89,10 +88,49 @@
         </div>
       </div>
 
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+        <div class="col-0">
+          <img src="assets/user.svg" alt="" width="23px">
+                Log in
+            </button>
+
+                      <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="login">login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  
+                <form action="" method="">
+                    <div class="form-group">
+                    <label for="nama">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                    </div>                  
+
+                    <div class="form-group">
+                    <label for="nama">Password</label>
+                    <input type="text" class="form-control" id="password" name="password">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Log In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="row">
         <div class="col">
-          <p style="font-size: 77px; text-align: center; padding-top: 14px;">Jon's</p>
-          <p style="text-align: center;">Boulangerie Patisserie</p>
+          <center><a href="<?= base_url(); ?>"style="font-size: 50px; color: black; padding-top: 14px;">Jon's <br> Boulangerie Patisserie</a></center>
         </div>
       </div><br>
 
@@ -110,16 +148,16 @@
         </div>
 
         <div class="col-2">
-          <center><a href="#" style="color: black;">FAQ</a></center>
+          <center><a href="<?= base_url(); ?>later" style="color: black;">FAQ</a></center>
 
         </div>
 
         <div class="col-2">
-          <center><a href="#" style="color: black;">JON'S</a></center>
+          <center><a href="<?= base_url(); ?>later" style="color: black;">JON'S</a></center>
         </div>
 
         <div class="col-2">
-          <center><a href="#" style="color: black;">ABOUT US</a></center>
+          <center><a href="<?= base_url(); ?>later" style="color: black;">ABOUT US</a></center>
         </div>
 
         <div class="col-2">
