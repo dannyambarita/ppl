@@ -70,7 +70,7 @@
 
                     <div class="form-group">
                     <label for="nama">Password</label>
-                    <input type="text" class="form-control" id="password" name="password">
+                    <input type="password" class="form-control" id="pass" name="password">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -105,22 +105,45 @@
 
                     <div class="form-group">
                     <label for="nama">Password</label>
-                    <input type="text" class="form-control" id="password" name="password">
+                    <input type="password" class="form-control" id="password" name="pass">
                     </div>
 
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Log In</button>
+                  <button type="submit" class="btn btn-primary" name="login">Log In</button>
                 </div>
               </div>
             </div>
           </div>
+          </div>
+      </div>
+      </div>
+      </div>
+          <?php
+            if(isset($_POST['signup'])){
+              $insert = mysqli_query($conn, "INSERT INTO pengguna VALUES 
+              ('".$_POST['nama']."','".$_POST['umur']."','".$_POST['email']."',
+              '".$_POST['username']."','".$_POST['pass']."','".$_POST['jeniskelamin']."')");
+          if($insert){
+            echo 'Data succes';
+          } else {
+            echo 'gagal';
+          }
+        }
+            if(isset($_POST['login'])){
+              $username = $_POST['username'];
+              $pass = $_POST['pass'];
+              $insert = mysqli_query($conn, "SELECT * from pengguna where 
+              username='$username' and pass='$pass'");
+              $cek = mysqli_num_rows($insert);
+              echo $cek;
+        }
 
-        </div>
-      </div>
-      </div>
-      </div>
+?>
+          
+
+        
 
       <div class="row">
         <div class="col">
