@@ -1,8 +1,19 @@
 <?php
 
 class roti_model extends CI_model {
-    public function getAllroti() 
-    {
-        return $this->db->get('roti')->result_array();     
+    private $table = 'pengguna';
+    private $db;
+
+    public function __construct()
+    {   
+        
+        $this->db = new db; 
     }
-}
+
+    
+}?>
+
+public function __construct() {
+        parent::__construct();
+        $this->load->model('roti_model');
+    }

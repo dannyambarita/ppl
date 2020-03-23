@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title><?php echo $judul; ?></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   </head>
   <body>
 
@@ -39,7 +37,7 @@
                 </div>
                 <div class="modal-body">
                                                                                   
-                <form action="" method="">
+                <form action="<?=base_url();?>" method="post">
                   <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
                     <input type="text" class="form-control" id="nama" name="nama">
@@ -70,17 +68,29 @@
 
                     <div class="form-group">
                     <label for="nama">Password</label>
-                    <input type="password" class="form-control" id="pass" name="password">
+                    <input type="password" class="form-control" id="pass" name="pass">
                     </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
+                  <button type="submit" class="btn btn-primary" id="signup" name="signup">Sign Up</button>
                 </div>
               </div>
-            </div>
-          </div> <pre>  </pre>
-
+            </div></div>
+           
+            <?php 
+            
+            if(isset($_POST['signup'])){
+              $insert = mysqli_query($db, "INSERT INTO pengguna VALUES ('".$_POST['nama']."','".$_POST['umur']."','".$_POST['username']."','".$_POST['pass']."','','".$_POST['jeniskelamin']."','".$_POST['email']."')");
+          if($insert){
+            echo 'Data succes';
+          } else {
+            echo 'gagal';
+          }
+        }?>
+          
+          <pre> </pre>         
+          
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
           <img src="assets/user.svg" alt="" width="23px">
                 Log in
@@ -105,9 +115,9 @@
 
                     <div class="form-group">
                     <label for="nama">Password</label>
-                    <input type="password" class="form-control" id="password" name="pass">
+                    <input type="password" class="form-control" id="pass" name="pass">
                     </div>
-
+            
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -116,34 +126,17 @@
               </div>
             </div>
           </div>
-          </div>
-      </div>
-      </div>
-      </div>
-          <?php
-            if(isset($_POST['signup'])){
-              $insert = mysqli_query($conn, "INSERT INTO pengguna VALUES 
-              ('".$_POST['nama']."','".$_POST['umur']."','".$_POST['email']."',
-              '".$_POST['username']."','".$_POST['pass']."','".$_POST['jeniskelamin']."')");
-          if($insert){
-            echo 'Data succes';
-          } else {
-            echo 'gagal';
-          }
-        }
+        </div>    
+            <?php
             if(isset($_POST['login'])){
               $username = $_POST['username'];
               $pass = $_POST['pass'];
               $insert = mysqli_query($conn, "SELECT * from pengguna where 
-              username='$username' and pass='$pass'");
+                username=='$username' and pass=='$pass'");
               $cek = mysqli_num_rows($insert);
               echo $cek;
-        }
-
+            }
 ?>
-          
-
-        
 
       <div class="row">
         <div class="col">
@@ -151,7 +144,7 @@
         </div>
       </div><br>
 
-      <div class="row">
+      <div class="row" style="background-color: #E5F1EF; padding-top: 4px; padding-bottom:4px;">
         <div class="col-1">
 
         </div>
@@ -161,7 +154,11 @@
         </div>
 
         <div class="col-2">
-          <center><a href="<?= base_url(); ?>roti" style="color: black;">OUR PRODUCT</a></center>
+          <center><a href="<?= base_url(); ?>location" style="color: black;">LOCATION</a></center>
+        </div>
+
+        <div class="col-2">
+          <center><a href="<?= base_url(); ?>roti" style="color: black;">CATALOG</a></center>
         </div>
 
         <div class="col-2">
@@ -170,17 +167,13 @@
         </div>
 
         <div class="col-2">
-          <center><a href="<?= base_url(); ?>later" style="color: black;">JON'S</a></center>
-        </div>
-
-        <div class="col-2">
-          <center><a href="<?= base_url(); ?>later" style="color: black;">ABOUT US</a></center>
+          <center><a href="<?= base_url(); ?>aboutus" style="color: black;">ABOUT US</a></center>
         </div>
 
         <div class="col-2">
 
-        </div><br><br>
+        </div>
 
-      </div>
+      </div><br>
 
       

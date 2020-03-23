@@ -1,14 +1,10 @@
 <?php
 
 class Roti extends CI_Controller {
-    public function __construct() {
-        parent::__construct();
-        $this->load->model('roti_model');
-    }
+    
 
     public function index() {
         $data['judul'] = "Website Jon's Bakery - Our Product";
-        $data['roti'] = $this->roti_model->getAllroti();
         $this->load->view('templates/header', $data);
         $this->load->view('roti/index');
         $this->load->view('templates/footer');

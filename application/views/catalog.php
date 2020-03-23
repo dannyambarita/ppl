@@ -207,3 +207,19 @@
 
   </body>
 </html>
+
+<div class="container">
+
+    <?php 
+    $roti = mysqli_query($conn, "SELECT * FROM roti");
+        while($hasil = mysqli_fetch_array($roti)) {
+    ?>
+    <div class="produk-roti">
+        <img class="gambar" src="roti/<?= $hasil['gambar_roti']; ?>"/>
+    </div>
+        <?php } ?>
+    <br><br>
+
+    </div>
+</div>
+</div>

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
-
+    
     <div class="row">
         <div class="col">
-          <center><a href="<?= base_url(); ?>"><img src="assets/kue.png" alt="" width="900px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kue.png" alt="" width="900px"></center></a>
         </div>
       </div>
     </div>
@@ -28,15 +28,15 @@
   <body>
     <div class="row">
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/welcome1.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome1.png" alt="" width="270px"></center></a>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/welcome2.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome2.png" alt="" width="270px"></center></a>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/welcome3.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome3.png" alt="" width="270px"></center></a>
         </div>
       </div>
 
@@ -52,17 +52,17 @@
 
       <div class="row">
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori1.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori1.png" alt="" width="270px"></center></a>
           <center><p>CUP CAKES</p></center>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori2.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori2.png" alt="" width="270px"></center></a>
           <center><p>HOUSE CAKES</p></center>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori3.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori3.png" alt="" width="270px"></center></a>
           <center><p>MACAROON</p></center>
         </div>
       </div>
@@ -72,17 +72,17 @@
 
       <div class="row">
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori4.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori4.png" alt="" width="270px"></center></a>
           <center><p>BREADS</p></center>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori5.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori5.png" alt="" width="270px"></center></a>
           <center><p>DOUGNAT</p></center>
         </div>
 
         <div class="col-4">
-          <center><a href="<?= base_url(); ?>later"><img src="assets/kategori6.png" alt="" width="270px"></center></a>
+          <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori6.png" alt="" width="270px"></center></a>
           <center><p>BREAKFAST PASTRIES</p></center>
         </div>
       </div>
@@ -100,13 +100,13 @@
               </ol>
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                <a href="<?= base_url(); ?>later"><img class="d-block img-fluid" src="assets/slide.png" alt="First slide" width="1030px"></a>
+                <a href="<?= base_url(); ?>deskripsi"><img class="d-block img-fluid" src="assets/slide.png" alt="First slide" width="1030px"></a>
                 </div>
                 <div class="carousel-item">
-                <a href="<?= base_url(); ?>later"><img class="d-block img-fluid" src="assets/slide.png" alt="Second slide" width="1030px"></a>
+                <a href="<?= base_url(); ?>deskripsi"><img class="d-block img-fluid" src="assets/slide.png" alt="Second slide" width="1030px"></a>
                 </div>
                 <div class="carousel-item">
-                <a href="<?= base_url(); ?>later"><img class="d-block img-fluid" src="assets/slide.png" alt="Third slide" width="1030px"></a>
+                <a href="<?= base_url(); ?>deskripsi"><img class="d-block img-fluid" src="assets/slide.png" alt="Third slide" width="1030px"></a>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -202,5 +202,7 @@
 
 
     <br>
+
+    </html>
 
         
