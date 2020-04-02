@@ -1,11 +1,10 @@
 <div class="container">
-<p style="font-size: 20px; text-align: center; padding-top: 20px;">Sign Up</p><hr>
+<p style="font-size: 20px; text-align: center; padding-top: 20px;">Log In</p><hr>
     <div class="row mt-3">
         <div class = "col-md-6">
-        
-            
-        <div class="card">
-        <div class="card-header">Sign Up</div>
+
+    <div class="card">
+        <div class="card-header">Log In</div>
         <div class="card-body">
         <?php if( validation_errors()) : ?>
         <div class="alert alert-danger" role="alert">
@@ -13,24 +12,7 @@
         </div>
         <?php endif; ?> 
             <form action="" method="post">
-                <div class="form-group">
-                <label for="nama">Nama Lengkap</label>
-                <input type="text" class="form-control" id="nama" name="nama">
-                </div>
-
-                <div class="form-group">
-                <label for="nama">Umur</label>
-                <input type="number" class="form-control" id="umur" name="umur">
-                </div>
-
-                <div class="form-group">
-                <label for="jeniskelamin">Jenis Kelamin</label>
-                <select class="form-control" id="jeniskelamin" name="jeniskelamin">
-                    <option value="laki">Laki-Laki</option>
-                    <option value="perempuan">Perempuan</option>
-                </select>
-                </div>
-
+                
                 <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email">
@@ -47,7 +29,7 @@
                 </div>
             
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" id="signup" name="signup">Sign Up</button>
+                <button type="submit" class="btn btn-primary" id="login" name="login">login</button>
             </div>
         </div>
         </div>

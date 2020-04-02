@@ -20,8 +20,9 @@
           <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
 
         </div>                                                                  
-          <a href="<?= base_url(); ?>signup" class="btn btn-primary">Sign Up</a>
-                  
+          <a href="<?= base_url(); ?>signup" class="btn btn-primary">Sign Up</a> 
+          <pre> </pre>
+          <a href="<?= base_url(); ?>login" class="btn btn-primary">Log In</a>        
                   
         </div>
                  

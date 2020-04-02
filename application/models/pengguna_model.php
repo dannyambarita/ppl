@@ -13,4 +13,4 @@ class pengguna_model extends CI_model {
        ];
        $this->db->insert('pengguna', $data);
     }
-}
+}?>
