@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2020 at 03:37 PM
+-- Generation Time: Apr 02, 2020 at 03:30 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `id_admin` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`nama_admin`, `username_admin`, `password_admin`, `id_admin`) VALUES
+('Danny Ambarita', 'dannyambarita123', 'jonsbakery123', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -62,11 +69,20 @@ INSERT INTO `komentar` (`isi_komentar`, `id_komentar`) VALUES
 CREATE TABLE `pengguna` (
   `nama_pengguna` varchar(50) NOT NULL,
   `umur_pengguna` varchar(200) NOT NULL,
-  `jenis_kelamin_pengguna` varchar(2) NOT NULL,
   `username_pengguna` varchar(50) NOT NULL,
   `password_pengguna` varchar(50) NOT NULL,
-  `id_pengguna` int(255) NOT NULL
+  `id_pengguna` int(255) NOT NULL,
+  `jenis_kelamin_pengguna` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pengguna`
+--
+
+INSERT INTO `pengguna` (`nama_pengguna`, `umur_pengguna`, `username_pengguna`, `password_pengguna`, `id_pengguna`, `jenis_kelamin_pengguna`, `email`) VALUES
+('Danny', '21', 'ekspulotion', 'asd', 3, 'laki', 'danny.ambarita130@gmail.com'),
+('hello world', '31', 'asdasd', 'asdasd', 4, 'perempuan', 'email@email.com');
 
 -- --------------------------------------------------------
 
@@ -103,7 +119,9 @@ CREATE TABLE `roti` (
 --
 
 INSERT INTO `roti` (`nama_roti`, `harga_roti`, `jenis_roti`, `stok_roti`, `gambar_roti`, `id_roti`) VALUES
-('roti coklat', 10000, 'buns', 10, 'roti.jpg', 1);
+('roti bakar', 10000, 'dibakar', 10, '600px-OG_RB_Logo.png', 3),
+('roti coklat', 10000, 'enak', 12, '1574330094-picsay.jpg', 4),
+('Christio Danny Gratia Ambarita', 10000, 'buns', 10, 'FC_Barcelona_(crest).svg.png', 5);
 
 --
 -- Indexes for dumped tables
@@ -147,7 +165,7 @@ ALTER TABLE `roti`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_admin` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `komentar`
@@ -159,7 +177,7 @@ ALTER TABLE `komentar`
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pengguna` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `rating`
@@ -171,7 +189,7 @@ ALTER TABLE `rating`
 -- AUTO_INCREMENT for table `roti`
 --
 ALTER TABLE `roti`
-  MODIFY `id_roti` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_roti` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
