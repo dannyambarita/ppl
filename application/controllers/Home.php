@@ -1,10 +1,20 @@
 <?php
 
-class Home extends CI_Controller {
-    public function index() {
-        $data['judul'] = "Website Jon's Bakery";
-        $this->load->view('templates/header', $data);
-        $this->load->view('konten/home',$data);
-        $this->load->view('templates/footer');
-    }
-} 
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Home extends CI_Controller
+{
+  function __construct()
+  {
+    parent::__construct();
+    $this->load->helper('url');
+  }
+
+  public function index()
+  {
+    $data['title'] = "Website Jon's Bakery";
+    $this->load->view('templates/header');
+    $this->load->view('konten/home');
+    $this->load->view('templates/footer');
+  }
+}

@@ -4,7 +4,7 @@ class Roti extends CI_Controller {
     
 
     public function index() {
-        $data['judul'] = "Website Jon's Bakery - Our Product";
+        $data['title'] = "Website Jon's Bakery - Our Product";
         $this->load->view('templates/header', $data);
         $this->load->view('roti/index');
         $this->load->view('templates/footer');
@@ -41,5 +41,4 @@ class Roti extends CI_Controller {
         redirect('');
     }
 }
-} 
-?>
+}

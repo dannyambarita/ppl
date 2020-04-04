@@ -138,7 +138,7 @@
 
         <div class="col-3">
           <center><a href="<?= base_url(); ?>later"><img src="assets/potm.png" alt="" width="270px"></a></center>
-        </div>
+          </div>
 
         <div class="col-3">
           <p style="text-align:left;font-size:26px;">MACAROON</p>
@@ -146,7 +146,7 @@
             <p style="text-align: left;">Beautiful macaroons are one of the current ‘sweet’ crazes. Make a batch, put them in a pretty box tied up with ribbon, and give them to a friend as a dazzling gift.</p>
               <a href="#" class="btn btn-primary" style="background-color:#31A38E">Rp. 50.000,-</a>
         </div>
-
+  
         <div class="col-3">
 
         </div>
