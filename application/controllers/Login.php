@@ -22,9 +22,10 @@ class Login extends CI_Controller
             $this->load->view('templates/footer');
         } else {
             $this->login_model->_login();
-            redirect('login');
+            redirect('homeafter');
         }
     }
+
 
     public function logout()
     {
@@ -35,6 +36,6 @@ class Login extends CI_Controller
             'message',
             '<div class="center col-lg-13 alert alert-success " role="alert">Your account has been logout</div>'
         );
-        redirect('login');
+        redirect('home');
     }
 }
