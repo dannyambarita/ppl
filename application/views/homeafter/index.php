@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
-
+    <br>
     <div class="row">
         <div class="col">
             <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kue.png" alt="" width="900px"></center></a>
