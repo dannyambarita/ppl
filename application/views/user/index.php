@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+    <title>SB Admin 2 - Blank</title>
 
-<title>User</title>
+    <!-- Custom fonts for this template-->
+    <link href="<?= base_url('assets'); ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('assets'); ?>/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-<!-- Custom fonts for this template-->
-<link href="<?= base_url('assets'); ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-<link href="<?= base_url('assets'); ?>/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="<?= base_url('assets'); ?>/css/sb-admin-2.min.css" rel="stylesheet">
 
-<!-- Custom styles for this template-->
-<link href="<?= base_url('assets'); ?>/css/sb-admin-2.min.css" rel="stylesheet">
-
-
+</head>
 
 <body id="page-top">
 
@@ -43,6 +43,8 @@
             <div class="sidebar-heading">
                 USER
             </div>
+
+
 
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
@@ -69,43 +71,87 @@
 
         </ul>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
 
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+
+                    <div class="topbar-divider d-none d-sm-block"></div>
+
+                    <!-- Nav Item - User Information -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span style="color:black; font-weight: bold;"><?= $user['name_user']; ?></span>
+                                <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image'] ?>" width="27px">
+                            </a>
+
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="<?= base_url('user') ?>">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="<?= base_url('login/logout') ?>" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">
-                        <?= $title; ?></h1>
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
 
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"><?= $user['name_user']; ?></h5>
-                                    <p class="card-text"><?= $user['email']; ?></p>
-                                    <p class="card-text"><small class="text-muted">You have been our beloved member since <?= date('d F Y', $user['date_created']); ?></small></p>
+                        <!-- Page Heading -->
+                        <h1 class="h3 mb-4 text-gray-800">
+                            <?= $title; ?></h1>
+
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?= $user['name_user']; ?></h5>
+                                        <p class="card-text"><?= $user['email']; ?></p>
+                                        <p class="card-text"><small class="text-muted">You have been our beloved member since <?= date('d F Y', $user['date_created']); ?></small></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                </div> <!-- /.container-fluid -->
+                    </div> <!-- /.container-fluid -->
+
+                </div>
+                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
-
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->

@@ -22,7 +22,6 @@ class Login extends CI_Controller
             $this->load->view('templates/footer');
         } else {
             $this->login_model->_login();
-            redirect('homeafter');
         }
     }
 
