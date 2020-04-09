@@ -18,9 +18,9 @@
                         ];
                         $this->session->set_userdata($data);
                         if ($user['role_id'] == 1) {
-                            redirect('admin');
+                            redirect('home');
                         } else {
-                            redirect('homeafter');
+                            redirect('home');
                         }
                     } else {
                         $this->session->set_flashdata(

@@ -22,46 +22,47 @@
         <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
 
       </div>
+
       <a href="<?= base_url(); ?>signup" class="btn btn-primary">Sign Up</a>
       <pre>  </pre>
       <a href="<?= base_url(); ?>login" class="btn btn-primary">Log In</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <center><a style="font-size: 50px; color: black; padding-top: 14px;">Jon's <br> Boulangerie Patisserie</a></center>
+    </div>
+  </div><br>
+
+  <div class="row" style="background-color: #E5F1EF; padding-top: 4px; padding-bottom:4px;">
+    <div class="col-1">
 
     </div>
 
-    <div class="row">
-      <div class="col">
-        <center><a style="font-size: 50px; color: black; padding-top: 14px;">Jon's <br> Boulangerie Patisserie</a></center>
-      </div>
-    </div><br>
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>" style="color: black;">HOME</a></center>
+    </div>
 
-    <div class="row" style="background-color: #E5F1EF; padding-top: 4px; padding-bottom:4px;">
-      <div class="col-1">
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>location" style="color: black;">LOCATION</a></center>
+    </div>
 
-      </div>
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>roti" style="color: black;">CATALOG</a></center>
+    </div>
 
-      <div class="col-2">
-        <center><a href="<?= base_url(); ?>" style="color: black;">HOME</a></center>
-      </div>
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>later" style="color: black;">FAQ</a></center>
 
-      <div class="col-2">
-        <center><a href="<?= base_url(); ?>location" style="color: black;">LOCATION</a></center>
-      </div>
+    </div>
 
-      <div class="col-2">
-        <center><a href="<?= base_url(); ?>roti" style="color: black;">CATALOG</a></center>
-      </div>
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>aboutus" style="color: black;">ABOUT US</a></center>
+    </div>
 
-      <div class="col-2">
-        <center><a href="<?= base_url(); ?>later" style="color: black;">FAQ</a></center>
+    <div class="col-2">
 
-      </div>
+    </div>
 
-      <div class="col-2">
-        <center><a href="<?= base_url(); ?>aboutus" style="color: black;">ABOUT US</a></center>
-      </div>
-
-      <div class="col-2">
-
-      </div>
-
-    </div><br>
+  </div><br>
