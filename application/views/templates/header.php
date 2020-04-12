@@ -22,11 +22,14 @@
         <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
 
       </div>
-
-      <a href="<?= base_url(); ?>signup" class="btn btn-primary">Sign Up</a>
-      <pre>  </pre>
-      <a href="<?= base_url(); ?>login" class="btn btn-primary">Log In</a>
+      <div>
+        <a href="<?= base_url(); ?>signup" class="btn" style=" background-color: #31A38E; color: white;"><img src="assets/user.svg" width="23px"> Sign up</a>
+      </div>
+      <div>
+        <a href="<?= base_url(); ?>login" class="btn" style=" background-color: #31A38E; color: white;"><img src="assets/user.svg" width="23px"> Log in</a>
+      </div>
     </div>
+
   </div>
 
   <div class="row">

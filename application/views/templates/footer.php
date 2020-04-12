@@ -5,7 +5,7 @@
 <body>
   <div class="row" style="background-color:#31A38E; padding-top: 20px;padding-bottom:20px;">
     <div class="col-4">
-      <center><img src="assets/logo.png" alt="" width="155px"></center>
+      <center><img src="assets/logo1.png" alt="" width="155px"></center>
     </div>
 
 

@@ -7,6 +7,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
+        #admin {
+            background-color: #4f4f4f;
+        }
+
+        #admin:hover {
+            background-color: #31A38E;
+        }
+
+        #edit {
+            background-color: #4f4f4f;
+        }
+
+        #edit:hover {
+            background-color: #31A38E;
+        }
+
         #overview {
             background-color: #4f4f4f;
         }
@@ -79,15 +95,15 @@
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
-                <div class="row tom-nav" style="" id="overview">
+                <div class="row tom-nav" style="" id="admin">
                     <div class="col">
                         <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="overview">
+                <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -99,7 +115,7 @@
 
                 <div class="row tom-nav" style="" id="product">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Product</center>
+                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
                     </div>
                 </div>
 
@@ -141,17 +157,17 @@
 
                 <div class="row">
                     <!-- Page Heading -->
-                    <h3 class="h3 mb-4 text-gray-800">
-                        <?= $title; ?></h3>
+
                     <br>
                 </div>
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img">
-                        </div>
                         <div class="col-md-8">
                             <div class="card-body">
+                                <h3 class="h3 mb-4 text-gray-800">
+                                    <?= $title; ?></h3>
+                                <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img" width="400px">
+                                <p></p>
                                 <h5 class="card-title"><?= $user['name_user']; ?></h5>
                                 <p class="card-text"><?= $user['email']; ?></p>
                                 <p class="card-text"><small class="text-muted">You have been our beloved Admin since <?= date('d F Y', $user['date_created']); ?></small></p>

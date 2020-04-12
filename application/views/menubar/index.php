@@ -85,6 +85,12 @@
                     </div>
                 </div>
 
+                <div class="row tom-nav" style="" id="edit">
+                    <div class="col">
+                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                    </div>
+                </div>
+
                 <div class="row tom-nav" style="" id="overview">
                     <div class="col">
                         <center><a href="#" style="color: white;">Over View</a></center>
@@ -93,7 +99,7 @@
 
                 <div class="row tom-nav" style="" id="product">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Product</center>
+                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
                     </div>
                 </div>
 
@@ -118,6 +124,12 @@
                 <div class="row tom-nav" style="" id="user">
                     <div class="col">
                         <center><a href="#" style="color: white;">User</a></center>
+                    </div>
+                </div>
+
+                <div class="row tom-nav" style="" id="user">
+                    <div class="col">
+                        <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
                     </div>
                 </div>
             </div>

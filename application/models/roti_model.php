@@ -1,19 +1,9 @@
 <?php
 
-class roti_model extends CI_model {
-    private $table = 'pengguna';
-    private $db;
-
-    public function __construct()
-    {   
-        
-        $this->db = new db; 
+class roti_model extends CI_model
+{
+    public function data_roti()
+    {
+        return $this->db->get('roti')->result_array();
     }
-
-    
-}?>
-
-public function __construct() {
-        parent::__construct();
-        $this->load->model('roti_model');
-    }
+}
