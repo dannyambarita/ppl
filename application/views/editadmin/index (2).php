@@ -158,48 +158,25 @@
                     <!-- Page Heading -->
                 </div>
                 <div class="card">
-                    <div class="card-header" style="color: black;">Edit Profile</div>
+                    <div class="card-header">Sign Up</div>
                     <div class="card-body">
                         <div class="row no-gutters">
                             <div class="col-md-8">
                                 <form>
                                     <div class="form-group">
-                                        <label for="newname" style="color: black;">New Name</label>
-                                        <input type="text" class="form-control" id="newname" name="newname">
-                                        <br>
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                     </div>
-
                                     <div class="form-group">
-                                        <label for="newage" style="color: black;">New Age</label>
-                                        <input type="text" class="form-control" id="newage" name="newage">
-                                        <br>
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="newemail" style="color: black;">New Email</label>
-                                        <input type="email" class="form-control" id="newemail" name="newemail">
-                                        <br>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="password" style="color: black;">Confirm your Old Password</label>
-                                        <input type="password" class="form-control" id="password" name="password">
-                                        <br>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="newpassword" style="color: black;">New Password</label>
-                                        <input type="password" class="form-control" id="newpassword" name="newpassword">
-                                        <br>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="photo">Photo</label><br>
-                                        <input type="file" class="btn">Choose Photo</input>
-                                        <br>
-                                    </div>
-
-                                    <button type="submit" class="btn" style="background-color: #31A38E" color="white">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -211,7 +188,7 @@
     </div>
     </div>
 
-    <script src=" js/jquery-3.4.1.min.js"> </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
 
 </body>

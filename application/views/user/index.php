@@ -15,6 +15,14 @@
             background-color: #31A38E;
         }
 
+        #testimoni {
+            background-color: #4f4f4f;
+        }
+
+        #testimoni:hover {
+            background-color: #31A38E;
+        }
+
         #product {
             background-color: #4f4f4f;
         }
@@ -76,6 +84,7 @@
 
                 <br>
 
+
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
@@ -85,6 +94,11 @@
                     </div>
                 </div>
 
+                <div class="row tom-nav" style="" id="testimoni">
+                    <div class="col">
+                        <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
+                    </div>
+                </div>
 
                 <div class="row tom-nav" style="" id="user">
                     <div class="col">
@@ -100,27 +114,26 @@
 
                 <div class="row">
                     <!-- Page Heading -->
-                    <h3 class="h3 mb-4 text-gray-800">
-                        <?= $title; ?></h3>
-                    <br>
                 </div>
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $user['name_user']; ?></h5>
-                                <p class="card-text"><?= $user['email']; ?></p>
-                                <p class="card-text"><small class="text-muted">You have been our beloved Member since <?= date('d F Y', $user['date_created']); ?></small></p>
+                        <div class="col-md-auto">
+                            <div class="card-body" style="background-color: black;">
+                                <h3 class="h3 mb-4 text-gray-800" style="color: white;">
+                                    <?= $title; ?></h3>
+                                <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img" width="300px">
+                                <p></p>
+                                <h5 class="card-title" style="color: white;"><?= $user['name_user']; ?></h5>
+                                <p class="card-text" style="color: white;"><?= $user['email']; ?></p>
+                                <p class="card-text"><small class="text-muted">You have been our beloved member since <?= date('d F Y', $user['date_created']); ?></small></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
+    </div>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>

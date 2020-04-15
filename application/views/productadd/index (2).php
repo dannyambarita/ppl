@@ -149,7 +149,7 @@
                                     <?= form_open_multipart('productadd'); ?>
                                     <div class="form-group">
                                         <label for="name">
-                                            <h6 style="color: black">Name</h6>
+                                            <h6>Name</h6>
                                         </label><br>
                                         <input type="text" id="name" name="name" rows="1" cols="75" value="<?= set_value('name'); ?>"></input>
                                         <?= form_error('name', '<small class="text-danger pl-3">', '</small'); ?>
@@ -158,7 +158,7 @@
 
                                     <div class="form-group">
                                         <label for="category">
-                                            <h6 style="color: black">Category</h6>
+                                            <h6>Category</h6>
                                         </label><br>
                                         <select class="form-control" id="category" name="category" style="width:200px">
                                             <?php foreach ($roti_role as $rtrl) {
@@ -171,7 +171,7 @@
 
                                     <div class="form-group">
                                         <label for="price">
-                                            <h6 style="color: black">Price</h6>
+                                            <h6>Price</h6>
                                         </label><br>
                                         <input type="number" id="price" name="price" value="<?= set_value('price'); ?>">
                                         </ti>
@@ -181,7 +181,7 @@
 
                                     <div class="form-group">
                                         <label for="description">
-                                            <h6 style="color: black">Description</h6>
+                                            <h6>Description</h6>
                                         </label><br>
                                         <textarea type="text" id="description" name="description" rows="2" cols="75" value="<?= set_value('description'); ?>"></textarea>
                                         <?= form_error('description', '<small class="text-danger pl-3">', '</small'); ?>
@@ -190,14 +190,15 @@
 
                                     <div class="form-group">
                                         <label for="photo">
-                                            <h6 style="color: black">Photo</h6>
+                                            <h6>Photo</h6>
                                         </label><br>
-                                        <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
-                                        <br>
+                                        <input type="file" name="photo" id="photo" class="btn" style=" background-color: #31A38E; color: white;">Choose File</input>
+                                        <br><br>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="special">
-                                            <h6 style="color: black">Special</h6>
+                                            <h6>Special</h6>
                                         </label><br>
                                         <select class="form-control" id="special" name="special" style="width:71px">
                                             <option value="1">Yes</option>

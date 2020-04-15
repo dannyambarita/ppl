@@ -121,13 +121,13 @@
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="testimoni">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Testimoni</a></center>
+                        <center><a href="<?= base_url('testimoni'); ?>" style="color: white;">Testimoni</a></center>
                     </div>
                 </div>
 
@@ -157,19 +157,17 @@
 
                 <div class="row">
                     <!-- Page Heading -->
-
-                    <br>
                 </div>
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="h3 mb-4 text-gray-800">
+                                <h3 class="h3 mb-4 text-gray-800" style="color: black;">
                                     <?= $title; ?></h3>
                                 <img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" class="card-img" width="400px">
                                 <p></p>
-                                <h5 class="card-title"><?= $user['name_user']; ?></h5>
-                                <p class="card-text"><?= $user['email']; ?></p>
+                                <h5 class="card-title" style="color: black;"><?= $user['name_user']; ?></h5>
+                                <p class="card-text" style="color: black;"><?= $user['email']; ?></p>
                                 <p class="card-text"><small class="text-muted">You have been our beloved Admin since <?= date('d F Y', $user['date_created']); ?></small></p>
                             </div>
                         </div>

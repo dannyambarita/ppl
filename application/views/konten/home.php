@@ -10,17 +10,18 @@
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>assets/css/style.css" />
 
   <style media="screen">
-  #price{
-    background-color: #31A38E;
-    color:white;
-  }
-   #price:hover{
-     background-color: #e6e6e6;
-     color: black;
-   }
+    #price {
+      background-color: #31A38E;
+      color: white;
+    }
+
+    #price:hover {
+      background-color: #e6e6e6;
+      color: black;
+    }
   </style>
 
-      <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 
 <body>
@@ -70,116 +71,116 @@
       </div>
     </div>
 
-  <div class="row">
-    <div class="col-4">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome1.png" alt="" width="270px"></center></a>
+    <div class="row">
+      <div class="col-4">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome1.png" alt="" width="270px"></center></a>
+      </div>
+
+      <div class="col-4">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome2.png" alt="" width="270px"></center></a>
+      </div>
+
+      <div class="col-4">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome3.png" alt="" width="270px"></center></a>
+      </div>
     </div>
 
-    <div class="col-4">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome2.png" alt="" width="270px"></center></a>
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col">
+        <center>
+          <p style="font-size:20px;">SHOP BY CATEGORIES</p>
+        </center>
+        <hr style="background-color:white; margin-top:-15px;">
+        <br>
+      </div>
     </div>
 
-    <div class="col-4">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/welcome3.png" alt="" width="270px"></center></a>
-    </div>
-  </div>
+    <div class="row">
+      <div class="col-1">
 
-  <br>
-  <br>
+      </div>
 
-  <div class="row">
-    <div class="col">
-      <center>
-        <p style="font-size:20px;">SHOP BY CATEGORIES</p>
-      </center>
-      <hr style="background-color:white; margin-top:-15px;">
-      <br>
-    </div>
-  </div>
+      <div class="col-5">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori2.png" alt="" width="400px"></a></center>
+        <center>
+          <p>HOUSE CAKES</p>
+        </center>
+      </div>
 
-  <div class="row">
-    <div class="col-1">
+      <div class="col-5">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori4.png" alt="" width="400px"></a></center>
+        <center>
+          <p>PASTERY</p>
+        </center>
+      </div>
 
-    </div>
+      <div class="col-1">
 
-    <div class="col-5">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori2.png" alt="" width="400px"></a></center>
-      <center>
-        <p>HOUSE CAKES</p>
-      </center>
+      </div>
     </div>
 
-    <div class="col-5">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori4.png" alt="" width="400px"></a></center>
-      <center>
-        <p>PASTERY</p>
-      </center>
+    <br>
+
+    <div class="row">
+      <div class="col-1">
+
+      </div>
+
+      <div class="col-5">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori5.png" alt="" width="400px"></a></center>
+        <center>
+          <p>SWEET BUN</p>
+        </center>
+      </div>
+
+      <div class="col-5">
+        <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori6.png" alt="" width="400px"></a></center>
+        <center>
+          <p>TOAST</p>
+        </center>
+      </div>
+
+      <div class="col-1">
+
+      </div>
     </div>
 
-    <div class="col-1">
+    <br>
+    <br>
 
-    </div>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-1">
-
-    </div>
-
-    <div class="col-5">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori5.png" alt="" width="400px"></a></center>
-      <center>
-        <p>SWEET BUN</p>
-      </center>
+    <div class="row">
+      <div class="col">
+        <center>
+          <p style="font-size:20px;">FEATURED PRODUCT OF THE MONTH</p>
+        </center>
+        <hr style="background-color:white; margin-top:-15px;">
+        <br>
+      </div>
     </div>
 
-    <div class="col-5">
-      <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori6.png" alt="" width="400px"></a></center>
-      <center>
-        <p>TOAST</p>
-      </center>
+    <div class="row">
+      <div class="col-3">
+
+      </div>
+
+      <div class="col-3">
+        <center><a href="<?= base_url(); ?>later"><img src="assets/potm.png" alt="" width="270px"></a></center>
+      </div>
+
+      <div class="col-3">
+        <p style="text-align:left;font-size:26px;">MACAROON</p>
+        <hr style="background-color:white; margin-top:-15px;">
+        <p style="text-align: left;">Beautiful macaroons are one of the current ‘sweet’ crazes. Make a batch, put them in a pretty box tied up with ribbon, and give them to a friend as a dazzling gift.</p>
+        <a href="#" class="btn" id="price">Rp. 50.000,-</a>
+      </div>
+
+      <div class="col-3">
+
+      </div>
     </div>
-
-    <div class="col-1">
-
-    </div>
-  </div>
-
-  <br>
-  <br>
-
-  <div class="row">
-    <div class="col">
-      <center>
-        <p style="font-size:20px;">FEATURED PRODUCT OF THE MONTH</p>
-      </center>
-      <hr style="background-color:white; margin-top:-15px;">
-      <br>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-3">
-
-    </div>
-
-    <div class="col-3">
-      <center><a href="<?= base_url(); ?>later"><img src="assets/potm.png" alt="" width="270px"></a></center>
-    </div>
-
-    <div class="col-3">
-      <p style="text-align:left;font-size:26px;">MACAROON</p>
-      <hr style="background-color:white; margin-top:-15px;">
-      <p style="text-align: left;">Beautiful macaroons are one of the current ‘sweet’ crazes. Make a batch, put them in a pretty box tied up with ribbon, and give them to a friend as a dazzling gift.</p>
-      <a href="#" class="btn" id="price">Rp. 50.000,-</a>
-    </div>
-
-    <div class="col-3">
-
-    </div>
-  </div>
   </div>
 
   <br>
@@ -228,6 +229,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+
+          <a href="<?= base_url('testimoni_user'); ?>" class="btn" style=" background-color: #31A38E; color: white;">Make Your Testimonials Now!</a>
         </center>
       </div>
     </div>

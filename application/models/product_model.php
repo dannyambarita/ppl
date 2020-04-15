@@ -37,4 +37,10 @@ class product_model extends CI_model
             redirect('productadd');
         }
     }
+
+    function hapus_data($id_roti)
+    {
+        $hasil = $this->db->query("'DELETE FROM roti WHERE id_roti = '$id_roti'");
+        return $hasil;
+    }
 }

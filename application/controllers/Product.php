@@ -21,4 +21,11 @@ class Product extends CI_Controller
             $this->load->view('product/index', $data);
         }
     }
+
+    function hapus()
+    {
+        $id_roti = $this->input->post('id_roti');
+        $this->product_model->hapus_data($id_roti);
+        redirect('product');
+    }
 }

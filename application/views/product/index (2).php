@@ -77,9 +77,15 @@
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
+                <div class="row tom-nav" style="" id="overview">
+                    <div class="col">
+                        <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
+                    </div>
+                </div>
+
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -91,13 +97,13 @@
 
                 <div class="row tom-nav" style="" id="product">
                     <div class="col">
-                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
+                        <center><a href="#" style="color: white;">Product</center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
+                        <center><a href="#" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
@@ -116,12 +122,6 @@
                 <div class="row tom-nav" style="" id="user">
                     <div class="col">
                         <center><a href="#" style="color: white;">User</a></center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="user">
-                    <div class="col">
-                        <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
                     </div>
                 </div>
 
@@ -165,15 +165,23 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+
                                             <?php foreach ($roti as $rt) : ?>
                                                 <td>
                                                     <li style='list-style-type: none;'><?= $rt['nama_roti']; ?></li>
+
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'><?= $rt['jenis_roti']; ?></li>
+
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'><?= $rt['harga_roti']; ?></li>
+                                                </td>
+                                                <td>
+                                                    <li style='list-style-type: none;'>
+                                                        <p text-align='justify;'><?= substr($rt['deskripsi_roti'], 0, 200); ?> ...</p>
+                                                    </li>
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
@@ -182,20 +190,14 @@
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
-                                                        <p text-align='justify;'><?= substr($rt['deskripsi_roti'], 0, 100); ?></p>
+                                                        <p><a href="#" class="text-success">Edit</a></p>
+                                                        <p><a href="#" class="text-danger">Delete</a></p>
                                                     </li>
                                                 </td>
-                                                <td>
-                                                    <li style='list-style-type: none;'>
-                                                        <button class="btn btn-xs btn-danger" <?= $rt['id_roti']; ?>>Delete</a>
-                                                    </li>
-                                                </td>
-                                        </tr>
-                                    <?php endforeach; ?>
+                                        </tr> <?php endforeach; ?>
                                     </tbody>
                                 </table>
-                            </form>
-                            <br>
+                            </form> <br>
                         </div>
                         <br>
                     </div>

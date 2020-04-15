@@ -10,53 +10,59 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 
   <style media="screen">
-  #discount{
-    background-color: white;
-  }
-   #discount:hover{
-     background-color: #31A38E;
-     color: white;
-   }
+    #discount {
+      background-color: white;
+    }
 
-  #home{
-   background-color: white;
-  }
-  #home:hover{
-    background-color: #31A38E;
-    color: white;
-  }
+    #discount:hover {
+      background-color: #31A38E;
+      color: white;
+    }
 
-  #location{
-    background-color: white;
-  }
-   #location:hover{
-     background-color: #31A38E;
-     color: white;
-   }
+    #home {
+      background-color: white;
+    }
 
-  #catalog{
-   background-color: white;
-  }
-  #catalog:hover{
-    background-color: #31A38E;
-    color: white;
-  }
+    #home:hover {
+      background-color: #31A38E;
+      color: white;
+    }
 
-  #aboutus{
-    background-color: white;
-  }
-   #aboutus:hover{
-     background-color: #31A38E;
-     color: white;
-   }
+    #location {
+      background-color: white;
+    }
 
-  #faq{
-   background-color: white;
-  }
-  #faq:hover{
-    background-color: #31A38E;
-    color: white;
-  }
+    #location:hover {
+      background-color: #31A38E;
+      color: white;
+    }
+
+    #catalog {
+      background-color: white;
+    }
+
+    #catalog:hover {
+      background-color: #31A38E;
+      color: white;
+    }
+
+    #aboutus {
+      background-color: white;
+    }
+
+    #aboutus:hover {
+      background-color: #31A38E;
+      color: white;
+    }
+
+    #faq {
+      background-color: white;
+    }
+
+    #faq:hover {
+      background-color: #31A38E;
+      color: white;
+    }
   </style>
 </head>
 
