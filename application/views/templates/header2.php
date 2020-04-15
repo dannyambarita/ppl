@@ -8,9 +8,59 @@
   <title>Website Jon's Bakery</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+  <style media="screen">
+  #discount{
+    background-color: white;
+  }
+   #discount:hover{
+     background-color: #31A38E;
+     color: white;
+   }
+
+  #home{
+   background-color: white;
+  }
+  #home:hover{
+    background-color: #31A38E;
+    color: white;
+  }
+
+  #location{
+    background-color: white;
+  }
+   #location:hover{
+     background-color: #31A38E;
+     color: white;
+   }
+
+  #catalog{
+   background-color: white;
+  }
+  #catalog:hover{
+    background-color: #31A38E;
+    color: white;
+  }
+
+  #aboutus{
+    background-color: white;
+  }
+   #aboutus:hover{
+     background-color: #31A38E;
+     color: white;
+   }
+
+  #faq{
+   background-color: white;
+  }
+  #faq:hover{
+    background-color: #31A38E;
+    color: white;
+  }
+  </style>
 </head>
 
-<body>
+<body style="background-color:black; color:white;">
 
   <div class="container-fluid">
     <div class="row" style="background-color:#31A38E; padding-top: 4px;padding-bottom:4px;">
@@ -35,40 +85,35 @@
 
   <div class="row">
     <div class="col">
-      <center><a style="font-size: 50px; color: black; padding-top: 14px;">Jon's <br> Boulangerie Patisserie</a></center>
+      <p style="font-size: 77px; text-align: center; padding-top: 14px;">JON'S</p>
+      <p style="font-size: 20px; text-align: center; margin-top:-45px;">Boulangerie - Patisserie</p>
     </div>
   </div><br>
 
-  <div class="row" style="background-color: #E5F1EF; padding-top: 4px; padding-bottom:4px;">
-    <div class="col-1">
-
+  <div class="row" style="background-color: white">
+    <div class="col-2">
+      <center><a href="<?= base_url(); ?>" class="btn" id="home">HOME</a></center>
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>home" style="color: black;">HOME</a></center>
+      <center><a href="<?= base_url(); ?>location" class="btn" id="location">LOCATION</a></center>
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>location" style="color: black;">LOCATION</a></center>
+      <center><a href="<?= base_url(); ?>roti" class="btn" id="catalog">CATALOG</a></center>
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>roti" style="color: black;">CATALOG</a></center>
+      <center><a href="<?= base_url(); ?>discount" class="btn" id="discount">DISCOUNT</a></center>
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>later" style="color: black;">FAQ</a></center>
-
+      <center><a href="<?= base_url(); ?>later" class="btn" id="faq">FAQ</a></center>
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>aboutus" style="color: black;">ABOUT US</a></center>
+      <center><a href="<?= base_url(); ?>aboutus" class="btn" id="aboutus">ABOUT US</a></center>
     </div>
-
-    <div class="col-2">
-
-    </div>
-
 
   </div><br>
 
