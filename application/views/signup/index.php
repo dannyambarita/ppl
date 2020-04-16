@@ -5,24 +5,24 @@
         <div class="col-lg-7">
 
             <div class="card">
-                <div class="card-header">Sign Up</div>
+                <div class="card-header" style="color: black">Sign Up</div>
                 <div class="card-body">
 
                     <form class="user" method="post" action="<?= base_url('signup') ?>">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name" style="color: black">Full Name</label>
                             <input type="text" class="form-control" id="name" name="name" value="<?= set_value('name'); ?>">
                             <?= form_error('name', '<small class="text-danger pl-3">', '</small'); ?>
                         </div>
 
                         <div class="form-group">
-                            <label for="nama">Age</label>
+                            <label for="nama" style="color: black">Age</label>
                             <input type="number" class="form-control" id="age" name="age" value="<?= set_value('age'); ?>">
                             <?= form_error('age', '<small class="text-danger pl-3">', '</small'); ?>
                         </div>
 
                         <div class="form-group">
-                            <label for="sex">Sex</label>
+                            <label for="sex" style="color: black">Sex</label>
                             <select class="form-control" id="sex" name="sex">
                                 <option value="man">Man</option>
                                 <option value="woman">Woman</option>
@@ -30,19 +30,19 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" style="color: black">Email</label>
                             <input type="email" class="form-control" id="email" name="email" value="<?= set_value('email'); ?>">
                             <?= form_error('email', '<small class="text-danger pl-3">', '</small'); ?>
                         </div>
 
                         <div class="form-group">
-                            <label for="nama">Password</label>
+                            <label for="nama" style="color: black">Password</label>
                             <input type="password" class="form-control" id="password1" name="password1">
                             <?= form_error('password1', '<small class="text-danger pl-3">', '</small'); ?>
                         </div>
 
                         <div class="form-group">
-                            <label for="nama">Repeat Password</label>
+                            <label for="nama" style="color: black">Repeat Password</label>
                             <input type="password" class="form-control" id="password1" name="password2">
                             <?= form_error('password2', '<small class="text-danger pl-3">', '</small'); ?>
                         </div>
