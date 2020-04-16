@@ -60,7 +60,7 @@
 
   <br>
 
-  <div class="container" style="">
+  <div class="container">
     <div class="row">
       <div class="col">
         <center>
@@ -229,8 +229,6 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
-          <a href="<?= base_url('testimoni_user'); ?>" class="btn" style=" background-color: #31A38E; color: white;">Make Your Testimonials Now!</a>
         </center>
       </div>
     </div>

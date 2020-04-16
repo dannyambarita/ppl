@@ -10,7 +10,7 @@ class komentar_model extends CI_model
     public function tambahDataKomentar()
     {
         $data = [
-            "komentar" => $this->input->post('testimoni', true)
+            "isi_komentar" => $this->input->post('testimoni', true)
         ];
         $this->db->insert('komentar', $data);
         redirect('testimoni_user');

@@ -109,36 +109,38 @@
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col">
-                                    <a href="" style="color: #31A38E; font-weight: bold;"> User </a>
-                                    <span style="font-weight: bold;">/ Testimoni</span>
+                                    <a href="<?= base_url('user') ?>" style="color: #31A38E; font-weight: bold;"> User </a>
+                                    <a href="<?= base_url('testimoni_user') ?>" style="color: #31A38E; font-weight: bold;"> / Testimoni /</a>
+                                    <span style="font-weight: bold;">Add your Testimoni</span>
                                 </div>
                             </div>
                             <br>
 
-                            <form class="user" method="post" action="<?= base_url('testimoni_user') ?>">
+                            <form class="user" method="post" action="<?= base_url('add_testimoni') ?>">
                                 <div class="form-group">
                                     <label for="testimoni" style="color: black;">Testimoni</label>
-                                    <textarea type="text" class="form-control" rows="5" id="testimoni" style="background-color: white;"></textarea>
+                                    <textarea type="text" class="form-control" rows="5" name="testimoni" id="testimoni" style="background-color: white;"></textarea>
+                                    <?= form_error('testimoni', '<small class="text-danger pl-3">', '</small'); ?>
                                 </div>
+
+                                <div class="row">
+                                    <div class="col-10">
+
+                                    </div>
+
+                                    <div class="col-2">
+                                        <button type="submit" id="add" name="add" class="btn" style=" background-color: #31A38E; color: white;">Add</button>
+                                    </div>
                             </form>
-
-                            <div class="row">
-                                <div class="col-10">
-
-                                </div>
-
-                                <div class="col-2">
-                                    <button type="submit" id="add" name="add" class="btn" style=" background-color: #31A38E; color: white;">Add</button>
-                                </div>
-                            </div>
-                            <br>
                         </div>
                         <br>
                     </div>
+                    <br>
                 </div>
-
             </div>
+
         </div>
+    </div>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>

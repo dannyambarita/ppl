@@ -78,7 +78,7 @@
             <div class="col-3" style="background-color: #4f4f4f;">
                 <div class="row" style="background-color: #31A38E;">
                     <div class="col" style="color: white; font-weight:bold;">
-                        <center>Jon's Admin</center>
+                        <center>Jon's Member</center>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
 
                 <div class="row tom-nav" style="" id="overview">
                     <div class="col">
-                        <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
+                        <center><a href="<?= base_url('user') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
                     </div>
                 </div>
 

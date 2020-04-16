@@ -109,8 +109,8 @@
             <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
               <div class="row" style="background-color: #d6d6d6;">
                 <div class="col">
-                  <a href="" style="color: #31A38E; font-weight: bold;"> User </a>
-                  <span style="font-weight: bold;">/ Testimoni</span>
+                  <a href="<?= base_url('user') ?>" style="color: #31A38E; font-weight: bold;"> User /</a>
+                  <span style="font-weight: bold;">Testimoni</span>
                 </div>
               </div>
 
@@ -138,7 +138,7 @@
                         <td>
 
                         </td>
-                        <td><a href="#">Delete</a></td>
+                        <td><a href="#"></a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -163,9 +163,6 @@
       </div>
     </div>
   </div>
-  <center>
-    <footer style="background-color: #d6d6d6;">Copyriht</footer>
-  </center>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>

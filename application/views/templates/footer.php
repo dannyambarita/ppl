@@ -1,7 +1,6 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
 <body>
   <div class="row" style="background-color:#31A38E; padding-top: 20px;padding-bottom:20px;">
     <div class="col-4">
