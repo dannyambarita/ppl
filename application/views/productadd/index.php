@@ -103,7 +103,7 @@
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
