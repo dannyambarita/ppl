@@ -7,22 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
-        #admin {
-            background-color: #4f4f4f;
-        }
-
-        #admin:hover {
-            background-color: #31A38E;
-        }
-
-        #edit {
-            background-color: #4f4f4f;
-        }
-
-        #edit:hover {
-            background-color: #31A38E;
-        }
-
         #overview {
             background-color: #4f4f4f;
         }
@@ -89,13 +73,11 @@
                         <center>Jon's Admin</center>
                     </div>
                 </div>
-
                 <br>
-
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
-                <div class="row tom-nav" style="" id="admin">
+                <div class="row tom-nav" style="" id="overview">
                     <div class="col">
                         <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
                     </div>
@@ -103,7 +85,7 @@
 
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -115,13 +97,13 @@
 
                 <div class="row tom-nav" style="" id="product">
                     <div class="col">
-                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
+                        <center><a href="<?= base_url('product'); ?>" style="color: white;">Product</center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
@@ -143,10 +125,8 @@
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="user">
-                    <div class="col">
-                        <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
-                    </div>
+                <div class="row" style="background-color: #4f4f4f;">
+
                 </div>
             </div>
 
@@ -154,38 +134,40 @@
 
                 <div class="row">
                     <div class="col">
-                    </div>
-                    <!-- Page Heading -->
-                </div>
-                <div class="card">
-                    <div class="card-header">Sign Up</div>
-                    <div class="card-body">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                        <!-- PRODUCT -->
+                        <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                            <div class="row" style="background-color: #d6d6d6;">
+                                <div class="col">
+                                    <a href="<?= base_url('categoriesadd'); ?>" style=" color: #31A38E; font-weight: bold;0">Admin > Categories > Add</a>
+                                </div>
                             </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col">
+                                    <?= form_open_multipart('categoriesadd'); ?>
+                                    <div class="form-group">
+                                        <label for="name">
+                                            <h6 style="color: black">Categories</h6>
+                                        </label><br>
+                                        <input type="text" id="name" name="name" rows="1" cols="75" value="<?= set_value('name'); ?>"></input>
+                                        <?= form_error('name', '<small class="text-danger pl-3">', '</small'); ?>
+                                        <br>
+                                    </div>
+                                    <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes'" style=" background-color: #31A38E; color: white;">Save</button>
+                                    <script src="sweetalert2.all.min.js"></script>
+
+                                    <?= form_close(); ?>
+                                </div>
+                            </div>
+                            <br>
                         </div>
+                        <br>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>

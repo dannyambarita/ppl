@@ -27,7 +27,7 @@ class Add_testimoni extends CI_Controller
                 $this->load->view('templates/footer');
             }
         } else {
-            $this->komentar_model->tambahDataKomentar();
+            $this->komentar_model->tambahDataKomentar($id);
         }
     }
 }

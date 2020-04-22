@@ -149,8 +149,8 @@
             <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
               <div class="row" style="background-color: #d6d6d6;">
                 <div class="col">
-                  <a href="" style="color: #31A38E; font-weight: bold;"> Admin </a>
-                  <span style="font-weight: bold;">/ Categories</span>
+                  <a style="color: #31A38E; font-weight: bold;"> Admin </a>
+                  <span style="color: #31A38E; font-weight: bold;">> Categories</span>
                 </div>
               </div>
 
@@ -158,7 +158,7 @@
 
               <div class="row" style="background-color: #d6d6d6;">
                 <div class="col">
-                  <a href="" style="color: #31A38E; font-weight: bold;">+Add new</a>
+                  <a href="<?= base_url() ?>categoriesadd" style="color: #31A38E; font-weight: bold;">+Add new</a>
                 </div>
               </div>
 
@@ -179,7 +179,8 @@
                           <td>
                             <li style='list-style-type: none;'><?= $rt['jenis_roti']; ?></li>
                           </td>
-                          <td> <a href="#" class="p-1 mb-2 bg-success text-white">Edit</a> | <a href="#" class="p-1 mb-2 bg-danger text-white">Delete</a></td>
+                          <td> <a href="#" class="p-1 mb-2 bg-success text-white">Edit</a> |
+                            <a href="<?= base_url(); ?>categories/hapus/<?= $rt['id']; ?>" style="color: white;" onclick="return confirm('Delete this?');" class="p-1 mb-2 bg-danger text-white">Delete</a></td>
                       </tr><?php endforeach; ?>
                     </tbody>
                   </table>

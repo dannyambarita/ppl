@@ -22,10 +22,10 @@ class Product extends CI_Controller
         }
     }
 
-    function hapus()
+    public function hapus($id)
     {
-        $id_roti = $this->input->post('id_roti');
-        $this->product_model->hapus_data($id_roti);
+        $this->roti_model->hapus_data($id);
+        $this->session->set_flashdata('flash', 'Deleted');
         redirect('product');
     }
 }

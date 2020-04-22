@@ -135,11 +135,18 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>
-
-                        </td>
-                        <td><a href="#"></a></td>
-                      </tr>
+                        <?php foreach ($komentar as $rt) : ?>
+                          <td>
+                            <?php if (strlen($rt['isi_komentar']) > 100) : ?>
+                              <li style='list-style-type: none;'><?= substr($rt['isi_komentar'], 0, 100); ?> ...</li>
+                            <?php else : ?>
+                              <li style='list-style-type: none;'><?= $rt['isi_komentar']; ?></li>
+                            <?php endif ?>
+                          </td>
+                          <td> <a href="#" class="p-1 mb-2 bg-success text-white">Edit</a> |
+                            <a href="<?= base_url(); ?>testimoni_user/hapus/<?= $rt['id_komentar']; ?>" class="p-1 mb-2 bg-danger text-white" onclick="return confirm('Delete this?');">Delete</a>
+                            </li>
+                      </tr><?php endforeach; ?>
                     </tbody>
                   </table>
                 </div>

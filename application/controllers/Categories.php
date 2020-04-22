@@ -22,4 +22,10 @@ class Categories extends CI_Controller
             $this->load->view('categories/index', $data);
         }
     }
+    public function hapus($id)
+    {
+        $this->roti_model->hapus_data_role($id);
+        $this->session->set_flashdata('flash', 'Deleted');
+        redirect('categories');
+    }
 }

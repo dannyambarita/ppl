@@ -137,7 +137,7 @@
                         <!-- PRODUCT -->
                         <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
                             <div class="col">
-                                <a href="" style=" color: #31A38E; font-weight: bold;0">Admin / Product</a>
+                                <a style=" color: #31A38E; font-weight: bold;0">Admin > Product</a>
                             </div>
                         </div>
 
@@ -146,7 +146,7 @@
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px;">
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col">
-                                    <a href="<?= base_url('productadd') ?>" style=" color: #31A38E; font-weight: bold;0">+ Add New</a>
+                                    <a href="<?= base_url('productadd') ?>" style=" color: #31A38E; font-weight: bold;">+ Add New</a>
                                 </div>
                             </div>
 
@@ -177,7 +177,7 @@
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
-                                                        <img src="<?= base_url('assets/img/roti/') . $rt['gambar_roti'] ?> " width="100px">
+                                                        <img src="<?= base_url('assets/img/roti/') . $rt['gambar_roti']; ?> " width="100px">
                                                     </li>
                                                 </td>
                                                 <td>
@@ -187,7 +187,9 @@
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
-                                                        <button class="btn btn-xs btn-danger" <?= $rt['id_roti']; ?>>Delete</a>
+                                                        <button class="btn btn-xs btn-danger">
+                                                            <a href="<?= base_url(); ?>product/hapus/<?= $rt['id_roti']; ?>" style="color: white;" onclick="return confirm('Delete this?');">Delete</a>
+                                                        </button>
                                                     </li>
                                                 </td>
                                         </tr>

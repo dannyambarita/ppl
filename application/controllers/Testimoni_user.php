@@ -28,4 +28,11 @@ class Testimoni_user extends CI_Controller
         // $this->komentar_model->tambahDataKomentar();
         // }
     }
+
+    public function hapus($id)
+    {
+        $this->komentar_model->hapus_komentar($id);
+        $this->session->set_flashdata('flash', 'Deleted');
+        redirect('testimoni_user');
+    }
 }

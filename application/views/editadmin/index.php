@@ -103,7 +103,7 @@
 
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -162,40 +162,48 @@
                     <div class="card-body">
                         <div class="row no-gutters">
                             <div class="col-md-8">
-                                <form>
+                                <form class="edit" method="post" action="<?= base_url('editadmin') ?>">
+                                    <input type="hidden" name="id" value="<?= $user['id']; ?>">
                                     <div class="form-group">
-                                        <label for="newname" style="color: black;">New Name</label>
-                                        <input type="text" class="form-control" id="newname" name="newname">
+                                        <label for="name" style="color: black;">New Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" value="<?= $user['name_user'] ?>">
                                         <br>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="newage" style="color: black;">New Age</label>
-                                        <input type="text" class="form-control" id="newage" name="newage">
+                                        <label for="age" style="color: black;">New Age</label>
+                                        <input type="text" class="form-control" id="age" name="age" value="<?= $user['age_user'] ?>">
                                         <br>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="newemail" style="color: black;">New Email</label>
-                                        <input type="email" class="form-control" id="newemail" name="newemail">
+                                        <label for="sex" style="color: black">Sex | curently sex = <?= $user['sex_user'] ?></label>
+                                        <select class="form-control" id="sex" name="sex">
+                                            <option value="Man">Man</option>
+                                            <option value="Woman">Woman</option>
+                                        </select>
                                         <br>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="password" style="color: black;">Confirm your Old Password</label>
-                                        <input type="password" class="form-control" id="password" name="password">
+                                        <label for="email" style="color: black;">New Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" value="<?= $user['email'] ?>">
                                         <br>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="newpassword" style="color: black;">New Password</label>
-                                        <input type="password" class="form-control" id="newpassword" name="newpassword">
-                                        <br>
+                                        <label for="nama" style="color: black">Password</label>
+                                        <input type="password" class="form-control" id="password1" name="password1">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="nama" style="color: black">Repeat Password</label>
+                                        <input type="password" class="form-control" id="password1" name="password2">
                                     </div>
 
                                     <div class="form-group">
                                         <label for="photo">Photo</label><br>
-                                        <input type="file" class="btn">Choose Photo</input>
+                                        <input type="file" class="btn" value="">Choose Photo</input>
                                         <br>
                                     </div>
 

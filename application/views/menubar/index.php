@@ -154,9 +154,9 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <h6>Description</h6>
+                                    <h6 style="color: black">Description</h6>
                                     <textarea name="deskripsi" rows="2" cols="75"></textarea><br><br>
-                                    <h6>Photo</h6>
+                                    <h6 style="color: black">Photo</h6>
                                     <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Choose File</button>
                                 </div>
                             </div>
@@ -187,15 +187,15 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <h6>Location</h6>
+                                    <h6 style="color: black">Location</h6>
                                     <textarea name="location" rows="1" cols="75"></textarea><br><br>
-                                    <h6>On the day</h6>
+                                    <h6 style="color: black">On the day</h6>
                                     <textarea name="ontheday" rows="1" cols="75"></textarea><br><br>
-                                    <h6>Open</h6>
+                                    <h6 style="color: black">Open</h6>
                                     <textarea name="open" rows="1" cols="20"></textarea>
-                                    <h6>Close</h6>
+                                    <h6 style="color: black">Close</h6>
                                     <textarea name="close" rows="1" cols="20"></textarea><br><br>
-                                    <h6>Photo</h6>
+                                    <h6 style="color: black">Photo</h6>
                                     <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Choose File</button>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <h6>FAQ</h6>
+                                    <h6 style="color: black">FAQ</h6>
                                     <textarea name="faq" rows="2" cols="75"></textarea><br><br>
                                 </div>
                             </div>
