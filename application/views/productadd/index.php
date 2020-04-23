@@ -204,7 +204,7 @@
                                             <option value="2">No</option>
                                         </select> <br><br>
 
-                                        <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes'" style=" background-color: #31A38E; color: white;">Save</button>
+                                        <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes')" style="background-color: #31A38E; color: white;">Save</button>
                                         <script src="sweetalert2.all.min.js"></script>
 
                                     </div>

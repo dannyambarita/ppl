@@ -23,4 +23,9 @@ class roti_model extends CI_model
         $this->db->where('id', $id);
         $this->db->delete('roti_role');
     }
+
+    public function data_rotibyid($id)
+    {
+        return $this->db->get_where('roti', ['id_roti' => $id])->row_array();
+    }
 }

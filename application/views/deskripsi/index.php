@@ -1,12 +1,13 @@
 <style media="screen">
-#price{
-  background-color: #31A38E;
-  color:white;
-}
- #price:hover{
-   background-color: #e6e6e6;
-   color: black;
- }
+  #price {
+    background-color: #31A38E;
+    color: white;
+  }
+
+  #price:hover {
+    background-color: #e6e6e6;
+    color: black;
+  }
 </style>
 
 <body>
@@ -26,14 +27,14 @@
       </div>
 
       <div class="col-4">
-        <center><img src="assets/cakes1.png" alt="" width="300px";></center>
+        <center><img src="<?= base_url('assets/img/roti/') . $roti['gambar_roti']; ?>" alt="" width="300px" ;></center>
       </div>
 
       <div class="col-4">
-        <p style="text-align:left;font-size:23px;">Choco Nut</p>
-          <hr style="background-color:white; margin-top:-15px;">
-          <p style="text-align: left;">Almond flour gives a subtle, nutty richness to this cake, which has a deep chocolate flavor without being too sweet. Topped with espresso-laced ganache, it’s an excellent dinner party or Passover dessert.</p>
-          <a href="#" class="btn" id="price">Rp. 50.000,-</a>
+        <p style="text-align:left;font-size:23px;"><?= $roti['nama_roti'] ?></p>
+        <hr style="background-color:white; margin-top:-15px;">
+        <p style="text-align: left;"><?= $roti['deskripsi_roti'] ?></p>
+        <a href="#" class="btn" style="" id="price">Rp. <?= $roti['harga_roti'] ?>,-</a>
       </div>
 
       <div class="col-2">

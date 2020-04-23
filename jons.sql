@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2020 at 09:12 PM
+-- Generation Time: Apr 23, 2020 at 04:49 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -106,7 +106,16 @@ CREATE TABLE `roti` (
 INSERT INTO `roti` (`nama_roti`, `harga_roti`, `jenis_roti`, `gambar_roti`, `id_roti`, `deskripsi_roti`) VALUES
 ('Coconut', 8000, 'Bread', '76d042c3-3006-47b8-b16b-6f42dafd1fe2.jpg', 14, 'Isian parutan kelapa'),
 ('Mini cheddar', 4000, 'Bread', '14c32885-0be2-4e16-8bc5-01185d231859.jpg', 15, 'isian keju,toping keju slice + daun parsley'),
-('Talas Ungu', 10000, 'Bread', '18e14a5e-0eaf-4ed4-ac2d-8374b4cb75db.jpg', 16, 'isian talas+ubi ungu');
+('Talas Ungu', 10000, 'Bread', '18e14a5e-0eaf-4ed4-ac2d-8374b4cb75db.jpg', 16, 'isian talas+ubi ungu'),
+('Donat Bulat Coklat', 10000, 'Bread', '1d1747cb-2228-4945-af28-d243deccd0c1.jpg', 21, 'Donut dengan toping cream dan Mesis'),
+('Coklat Keju', 10000, 'Bread', 'e5d1c87a-f6ea-4eec-9088-97ff75c096d2.jpg', 22, 'Roti dengan isi coklat pasta dan keju'),
+('Boomerang', 12000, 'Bread', '5358d01b-2a8c-455e-852e-4ad4dc98364c.jpg', 23, 'Roti dengan isian buah pisang + coklat'),
+('Mini Pisang Coklat', 4000, 'Bread', '60056fcd-32fd-4042-a32c-2dfa1658d714.jpg', 24, 'Roti dengan isian buah pisang dan coklat pasta, toping wijen hitam'),
+('Tuna Croquette', 15000, 'Bread', '9fa7bc43-307f-41b6-8479-b292a2aab988.jpg', 25, 'Roti dengan isi daging ikan tuna, dan toping daun parsley'),
+('Super Choco', 9000, 'Bread', 'a18e3896-8da8-4780-97f8-d64c9f58ecb3.jpg', 26, 'Roti isiang coklat pasta ditambah dengan toping mesis'),
+('Banana Chese', 11000, 'Bread', '0bfa8681-7577-4890-8f0e-9fd9e3df2f6a.jpg', 27, 'Roti dengan isian pisang keju, ditambah dengan toping keju parut'),
+('Durian Bread', 16000, 'Bread', '433e9833-00d6-43ec-875c-6bca311dd5dc.jpg', 28, 'Roti dengan isian durian Medan asli'),
+('Mini Srikaya', 4000, 'Bread', 'f68f498f-82c0-4cc6-b9dc-1e65b69f71b5.jpg', 29, 'Roti mini isian selay srikaya, cocok untuk sarapan bersama anak');
 
 -- --------------------------------------------------------
 
@@ -251,7 +260,7 @@ ALTER TABLE `rating`
 -- AUTO_INCREMENT for table `roti`
 --
 ALTER TABLE `roti`
-  MODIFY `id_roti` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_roti` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `roti_role`
