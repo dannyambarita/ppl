@@ -162,65 +162,72 @@
                     <div class="card-body">
                         <div class="row no-gutters">
                             <div class="col-md-8">
-                                <form class="edit" method="post" action="<?= base_url('editadmin') ?>">
-                                    <input type="hidden" name="id" value="<?= $user['id']; ?>">
-                                    <div class="form-group">
-                                        <label for="name" style="color: black;">New Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" value="<?= $user['name_user'] ?>">
-                                        <br>
-                                    </div>
+                                <?= form_open_multipart('editadmin/index'); ?>
+                                <input type="hidden" name="id" value="<?= $user['id']; ?>">
+                                <div class="form-group">
+                                    <label for="name" style="color: black;">New Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" value="<?= $user['name_user'] ?>">
+                                    <br>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="age" style="color: black;">New Age</label>
-                                        <input type="text" class="form-control" id="age" name="age" value="<?= $user['age_user'] ?>">
-                                        <br>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="age" style="color: black;">New Age</label>
+                                    <input type="text" class="form-control" id="age" name="age" value="<?= $user['age_user'] ?>">
+                                    <br>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="sex" style="color: black">Sex | curently sex = <?= $user['sex_user'] ?></label>
-                                        <select class="form-control" id="sex" name="sex">
-                                            <option value="Man">Man</option>
-                                            <option value="Woman">Woman</option>
-                                        </select>
-                                        <br>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="sex" style="color: black">Sex | curently sex = <?= $user['sex_user'] ?></label>
+                                    <select class="form-control" id="sex" name="sex">
+                                        <option value="Man">Man</option>
+                                        <option value="Woman">Woman</option>
+                                    </select>
+                                    <br>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="email" style="color: black;">New Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" value="<?= $user['email'] ?>">
-                                        <br>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="email" style="color: black;">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" value="<?= $user['email'] ?>" readonly>
+                                    <br>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="nama" style="color: black">Password</label>
-                                        <input type="password" class="form-control" id="password1" name="password1">
-                                    </div>
+                                <div class="form-group">
+                                    <label for="nama" style="color: black">Password</label>
+                                    <input type="text" class="form-control" id="password1" name="password1" value="<?= $user['password'] ?>">
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="nama" style="color: black">Repeat Password</label>
-                                        <input type="password" class="form-control" id="password1" name="password2">
-                                    </div>
+                                <div class="form-group">
+                                    <label for="nama" style="color: black">Repeat Password</label>
+                                    <input type="password" class="form-control" id="password1" name="password2">
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="photo">Photo</label><br>
-                                        <input type="file" class="btn" value="">Choose Photo</input>
-                                        <br>
+                                <div class="form-group">
+                                    <div class="col-sm-2" style="color: black">Picture</div>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="" class="img-thumbnail">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="image" name="image">
+                                                    <label class="custom-file-label" for="image">Choose Image</label>
+                                                </div>
+                                            </div>
+                                        </div> <button type="submit" class="btn" style="background-color: #31A38E" color="white">Submit</button>
+                                        </form>
                                     </div>
-
-                                    <button type="submit" class="btn" style="background-color: #31A38E" color="white">Submit</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
-    </div>
-    </div>
 
-    <script src=" js/jquery-3.4.1.min.js"> </script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+        <script src=" js/jquery-3.4.1.min.js"> </script>
+        <script src="bootstrap/js/bootstrap.js"></script>
 
 </body>
 
