@@ -16,10 +16,14 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="<?= base_url(); ?>assets/js/sweetalert2.all.min.js"></script>
         <script src="<?= base_url(); ?>assets/js/myscript.js"></script>
+
+        <script>
+            $('.custom-file-input').on('change', function() {
+                let fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+        </script>
 </body>
-
-
-
 
 <div class="col-2">
     <center><a href="<?= base_url(); ?>later" style="color: white;">POLICY</a></center>

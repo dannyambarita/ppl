@@ -157,8 +157,11 @@
 
                 <div class="row">
                     <!-- Page Heading -->
+                    <div class="col-lg-7">
+                        <?= $this->session->flashdata('message'); ?>
+                    </div>
                 </div>
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="card mb-3 col-lg-7">
                     <div class="row no-gutters">
                         <div class="col-md-8">
                             <div class="card-body">
