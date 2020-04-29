@@ -9,6 +9,7 @@ class product_model extends CI_model
             "harga_roti" => $this->input->post('price', true),
             "jenis_roti" => $this->input->post('category', true),
             "deskripsi_roti" => $this->input->post('description', true),
+            "special" => $this->input->post('special', true)
         ];
         $upload_image = $_FILES['photo']['name'];
         if ($upload_image) {
@@ -33,6 +34,11 @@ class product_model extends CI_model
     function getroti()
     {
         return $this->db->query('SELECT jenis_roti FROM roti_role')->result();
+    }
+
+    function getspecial()
+    {
+        return $this->db->query('SELECT nama_special FROM special_role')->result();
     }
 
     public function tambahJenisRoti()

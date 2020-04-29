@@ -14,7 +14,7 @@ class edit_user extends CI_model
             "age_user" => $this->input->post('age', true),
             "sex_user" => $this->input->post('sex', true),
             "email" => $this->input->post('email', true),
-            "password" => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
+            "password" => password_hash($this->input->post('password1'), true), //PASSWORD_DEFAULT
             'role_id' => 2,
             'is_active' => 1,
             'date_created' => time()

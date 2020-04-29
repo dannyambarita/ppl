@@ -137,7 +137,7 @@
                         <!-- PRODUCT -->
                         <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
                             <div class="col">
-                                <a style=" color: #31A38E; font-weight: bold;0">Admin > Product</a>
+                                <a style=" color: #31A38E; font-weight: bold;">Admin > Product</a>
                             </div>
                         </div>
 
@@ -145,8 +145,10 @@
 
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px;">
                             <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                    <a href="<?= base_url('productadd') ?>" style=" color: #31A38E; font-weight: bold;">+ Add New</a>
+                                <div class="col"><br>
+                                    <button class="btn" style="background-color: #31A38E; color: white;">
+                                        <a href="<?= base_url('productadd') ?>" style=" color: white; font-weight: bold;">+ Add New :3</a>
+                                    </button><br><br>
                                 </div>
                             </div>
 
@@ -182,11 +184,18 @@
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
-                                                        <p text-align='justify;'><?= substr($rt['deskripsi_roti'], 0, 100); ?></p>
+                                                        <?php if (strlen($rt['deskripsi_roti']) > 50) : ?>
+                                                            <p text-align='justify;'><?= substr($rt['deskripsi_roti'], 0, 20); ?> ...</p>
+                                                        <?php else : ?>
+                                                            <p text-align='justify;'><?= $rt['deskripsi_roti']; ?></p>
+                                                        <?php endif ?>
                                                     </li>
                                                 </td>
                                                 <td>
                                                     <li style='list-style-type: none;'>
+                                                        <button class="btn" style="background-color: #31A38E; color: white;">
+                                                            <a href="<?= base_url(); ?>editroti/index/<?= $rt['id_roti']; ?>" style="color: white;">Edit</a>
+                                                        </button>
                                                         <button class="btn btn-xs btn-danger">
                                                             <a href="<?= base_url(); ?>product/hapus/<?= $rt['id_roti']; ?>" style="color: white;" onclick="return confirm('Delete this?');">Delete</a>
                                                         </button>

@@ -9,11 +9,13 @@ class Home extends CI_Controller
     parent::__construct();
     $this->load->helper('url');
     $this->load->model('login_model');
+    $this->load->model('roti_model');
   }
 
   public function index()
   {
     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+    $data['roti'] = $this->roti_model->data_roti();
     if ($this->session->userdata('email') === null) {
       $this->load->view('templates/header', $data);
       $this->load->view('konten/home', $data);

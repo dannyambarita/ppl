@@ -17,6 +17,7 @@ class Productadd extends CI_Controller
         $this->form_validation->set_rules('description', 'Description', 'required|trim');
         $data['title'] = 'Add Product';
         $data['roti_role'] = $this->product_model->getroti();
+        $data['special_role'] = $this->product_model->getspecial();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('templates/header2', $data);

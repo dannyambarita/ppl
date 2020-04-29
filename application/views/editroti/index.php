@@ -146,75 +146,65 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <?= form_open_multipart('productadd'); ?>
-                                    <div class="form-group">
-                                        <label for="name">
-                                            <h6 style="color: black">Name</h6>
-                                        </label><br>
-                                        <input type="text" id="name" name="name" rows="1" cols="75" value="<?= set_value('name'); ?>"></input>
-                                        <?= form_error('name', '<small class="text-danger pl-3">', '</small'); ?>
-                                        <br><br>
-                                    </div>
+                                    <form class="user" method="post" action="<?= base_url('editroti') ?>">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                <h6 style="color: black">Name</h6>
+                                            </label><br>
+                                            <input type="text" id="name" name="name" rows="1" cols="75"></input>
+                                            <br><br>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="category">
-                                            <h6 style="color: black">Category</h6>
-                                        </label><br>
-                                        <select class="form-control" id="category" name="category" style="width:200px">
-                                            <option disabled selected> choose </option>
-                                            <?php foreach ($roti_role as $rtrl) {
-                                                echo '<option value="' . $rtrl->jenis_roti . '">' . $rtrl->jenis_roti . '</option>';
-                                            }
-                                            ?>
-                                        </select>
-                                        <br>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="category">
+                                                <h6 style="color: black">Category</h6>
+                                            </label><br>
+                                            <select class="form-control" id="category" name="category" style="width:200px">
+                                                <?php foreach ($roti_role as $rtrl) {
+                                                    echo '<option value="' . $rtrl->jenis_roti . '">' . $rtrl->jenis_roti . '</option>';
+                                                }
+                                                ?>
+                                            </select>
+                                            <br>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="price">
-                                            <h6 style="color: black">Price</h6>
-                                        </label><br>
-                                        <input type="number" id="price" name="price" value="<?= set_value('price'); ?>">
-                                        </ti>
-                                        <?= form_error('price', '<small class="text-danger pl-3">', '</small'); ?>
-                                        <br><br>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="price">
+                                                <h6 style="color: black">Price</h6>
+                                            </label><br>
+                                            <input type="number" id="price" name="price">
+                                            <br><br>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="description">
-                                            <h6 style="color: black">Description</h6>
-                                        </label><br>
-                                        <textarea type="text" id="description" name="description" rows="2" cols="75" value="<?= set_value('description'); ?>"></textarea>
-                                        <?= form_error('description', '<small class="text-danger pl-3">', '</small'); ?>
+                                        <div class="form-group">
+                                            <label for="description">
+                                                <h6 style="color: black">Description</h6>
+                                            </label><br>
+                                            <textarea type="text" id="description" name="description" rows="2" cols="75"></textarea>
 
-                                    </div>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="special">
-                                            <h6 style="color: black">Special</h6>
-                                        </label><br>
-                                        <select class="form-control" id="special" name="special" style="width:auto">
-                                            <option disabled selected> choose </option>
-                                            <?php foreach ($special_role as $sprl) {
-                                                echo '<option value="' . $sprl->nama_special . '">' . $sprl->nama_special . '</option>';
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="photo">
+                                                <h6 style="color: black">Photo</h6>
+                                            </label><br>
+                                            <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
+                                            <br>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="special">
+                                                <h6 style="color: black">Special</h6>
+                                            </label><br>
+                                            <select class="form-control" id="special" name="special" style="width:71px">
+                                                <option value="1">Yes</option>
+                                                <option value="2">No</option>
+                                            </select> <br><br>
 
-                                    <div class="form-group">
-                                        <label for="photo">
-                                            <h6 style="color: black">Photo</h6>
-                                        </label><br>
-                                        <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
-                                        <br><br>
-                                    </div>
+                                            <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes')" style="background-color: #31A38E; color: white;">Save</button>
+                                            <script src="sweetalert2.all.min.js"></script>
 
-                                    <div>
-                                        <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes')" style="background-color: #31A38E; color: white;">Save</button>
-                                        <script src="sweetalert2.all.min.js"></script>
-                                    </div>
-                                    <?= form_close(); ?>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                             <br>
