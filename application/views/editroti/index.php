@@ -186,7 +186,18 @@
 
                                         <div class="form-group">
                                             <label for="photo">
-                                                <h6 style="color: black">Photo</h6>
+                                                <div class="col-sm-10" style="color: black">Current Picture</div>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img src="<?= base_url('assets/img/roti/') . $roti['gambar_roti'] ?>" class="img-thumbnail">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="custom-file">
+                                                                <input type="file" style="color: black" id="image" name="image">
+                                                            </div>
+                                                        </div>
+                                                        <h6 style="color: black">Photo</h6>
                                             </label><br>
                                             <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
                                             <br>

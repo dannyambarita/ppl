@@ -86,60 +86,30 @@
             <div class="col-3" style="background-color: #4f4f4f;">
                 <div class="row" style="background-color: #31A38E;">
                     <div class="col" style="color: white; font-weight:bold;">
-                        <center>Jon's Admin</center>
+                        <center>Jon's Member</center>
                     </div>
                 </div>
 
                 <br>
+
 
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
                 <div class="row tom-nav" style="" id="overview">
                     <div class="col">
-                        <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
+                        <center><a href="<?= base_url('user') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
                     </div>
                 </div>
-
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="overview">
-                    <div class="col">
-                        <center><a href="#" style="color: white;">Over View</a></center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="product">
-                    <div class="col">
-                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="kategori">
-                    <div class="col">
-                        <center><a href="<?= base_url('categories') ?>" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('edituser') ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="testimoni">
                     <div class="col">
                         <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="menubar">
-                    <div class="col">
-                        <center><a href="<?= base_url('menubar') ?>" style="color: white;">Menu Bar</a></center>
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="user">
-                    <div class="col">
-                        <center><a href="#" style="color: white;">User</a></center>
                     </div>
                 </div>
 
@@ -164,7 +134,7 @@
                         <div class="row no-gutters">
                             <div class="col-md-8">
 
-                                <form class="user" method="post" action="<?= base_url('editadmin') ?>">
+                                <form class="user" method="post" action="<?= base_url('edituser') ?>">
                                     <div class="form-group">
                                         <label for="email" style="color: black;">Your Email</label>
                                         <input type="email" class="form-control" id="email" name="email" value="<?= $user['email'] ?>" readonly>

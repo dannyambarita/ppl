@@ -7,6 +7,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
+        #edit {
+            background-color: #4f4f4f;
+        }
+
+        #edit:hover {
+            background-color: #31A38E;
+        }
+
         #overview {
             background-color: #4f4f4f;
         }
@@ -87,7 +95,7 @@
 
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -105,19 +113,19 @@
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories') ?>" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="testimoni">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Testimoni</a></center>
+                        <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="menubar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Menu Bar</a></center>
+                        <center><a href="<?= base_url('menubar') ?>" style="color: white;">Menu Bar</a></center>
                     </div>
                 </div>
 
@@ -159,7 +167,7 @@
                                         <textarea name="description" id="description" name="description" rows="10" cols="130"><?= $abt['deskripsi']; ?></textarea><br><br>
                                         <div class="col-sm-9">
                                             <div class="custom-file">
-                                                <h6 style="color: black">Photo</h6>
+                                                <h6 style="color: black">Current Photo</h6>
                                                 <div class="col-sm-10">
                                                     <div class="row">
                                                         <div class="col-sm-3">

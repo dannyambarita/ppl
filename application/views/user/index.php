@@ -15,6 +15,14 @@
             background-color: #31A38E;
         }
 
+        #edit {
+            background-color: #4f4f4f;
+        }
+
+        #edit:hover {
+            background-color: #31A38E;
+        }
+
         #testimoni {
             background-color: #4f4f4f;
         }
@@ -91,6 +99,11 @@
                 <div class="row tom-nav" style="" id="overview">
                     <div class="col">
                         <center><a href="<?= base_url('user') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
+                    </div>
+                </div>
+                <div class="row tom-nav" style="" id="edit">
+                    <div class="col">
+                        <center><a href="<?= base_url('edituser') ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
