@@ -8,24 +8,21 @@ class Editadmin extends CI_Controller
         parent::__construct();
         $this->load->helper('url');
         $this->load->model('login_model');
-        $this->load->model('edit_user');
+        $this->load->model('about_us_model');
         $this->load->library('form_validation');
     }
     public function index()
     {
         $data['title'] = 'Edit Profile';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $data['about'] = $this->about_us_model->about_us();
 
         $this->form_validation->set_rules('name', 'Full name', 'required|trim');
         $this->form_validation->set_rules('age', 'Age', 'required|trim');
-        //if ($this->form_validation->run() == false) {
+
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header2', $data);
             $this->load->view('editadmin/index', $data);
-            //} else {
-            //$this->edit_user->ubahdatauser();
-            //$this->session->set_flashdata('flash', 'Edited Data');
-            //redirect('admin');
         } else {
             $name = $this->input->post('name');
             $email = $this->input->post('email');

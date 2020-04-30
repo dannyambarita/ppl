@@ -147,7 +147,7 @@
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col"><br>
                                     <button class="btn" style="background-color: #31A38E; color: white;">
-                                        <a href="<?= base_url('productadd') ?>" style=" color: white; font-weight: bold;">+ Add New :3</a>
+                                        <a href="<?= base_url('productadd') ?>" style=" color: white; font-weight: bold;">+ Add New</a>
                                     </button><br><br>
                                 </div>
                             </div>

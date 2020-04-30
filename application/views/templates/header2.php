@@ -80,7 +80,7 @@
       <div class="topbar-divider d-none d-sm-block"></div>
 
       <!-- Nav Item - User Information -->
-      <pre>              </pre>
+      <pre></pre>
       <a href="<?= base_url() ?>home/profile" id="userDropdown" class="btn" aria-haspopup="true" aria-expanded="false" style=" background-color: #31A38E; color: white;">
         <span style="color:white; font-weight: bold;"><?= $user['name_user']; ?></span>
         <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image'] ?>" width="27px">

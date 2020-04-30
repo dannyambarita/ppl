@@ -174,8 +174,7 @@
                                         <label for="price">
                                             <h6 style="color: black">Price</h6>
                                         </label><br>
-                                        <input type="number" id="price" name="price" value="<?= set_value('price'); ?>">
-                                        </ti>
+                                        <input type="number" id="price" name="price">
                                         <?= form_error('price', '<small class="text-danger pl-3">', '</small'); ?>
                                         <br><br>
                                     </div>
