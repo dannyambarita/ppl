@@ -17,7 +17,7 @@ class Editadmin extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $data['about'] = $this->about_us_model->about_us();
 
-        $this->form_validation->set_rules('name', 'Full name', 'required|trim');
+        $this->form_validation->set_rules('name', 'Full name', 'required|max_length[20]|trim');
         $this->form_validation->set_rules('age', 'Age', 'required|trim');
 
         if ($this->form_validation->run() == false) {

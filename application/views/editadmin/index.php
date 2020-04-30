@@ -195,7 +195,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="col-sm-2" style="color: black">Picture</div>
+                                        <div class="col-sm-10" style="color: black">Current Picture</div>
                                         <div class="col-sm-10">
                                             <div class="row">
                                                 <div class="col-sm-3">
