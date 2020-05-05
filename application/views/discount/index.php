@@ -11,32 +11,31 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-1">
+        <div class="container">
+          <?php foreach ($diskon as $d) : ?>
+            <td>
+              <div class="row" style="">
+                  <div class="col-2">
 
-      </div>
+                  </div>
 
-      <div class="col-5">
-        <center><a href="<?= base_url(); ?>"><img src="assets/kategori2.png" alt="" width="340px"></a></center>
-      </div>
+                  <div class="col-3" style="background-color: black">
+                    <center><img src="<?= base_url('assets/img/roti/') . $d['foto']; ?>" width="300px"></center>
+                  </div>
 
-      <div class="col-5">
-        <center><a href="<?= base_url(); ?>"><img src="assets/kategori4.png" alt="" width="340px"></a></center>
-      </div>
+                  <div class="col-5" style="background-color: black"><br>
+                    <center><p><?= $d['deskripsi']; ?></p></center>
+                  </div>
 
-      <div class="col-1">
+                  <div class="col-2">
 
-      </div>
-    </div>
+                  </div>
+              </div>
+              <hr style="background-color: white;">
+            </td><?php endforeach; ?>
+        </div>
 
     <br>
 
-    <div class="row">
-      <div class="col">
-        <center><a href="<?= base_url(); ?>"><img src="assets/kategori4.png" alt="" width="340px"></a></center>
-      </div>
-    </div>
-    <br>
-    <br>
   </div>
 </body>
