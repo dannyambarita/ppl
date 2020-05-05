@@ -7,6 +7,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
+        #edit {
+            background-color: #4f4f4f;
+        }
+
+        #edit:hover {
+            background-color: #31A38E;
+        }
+
         #overview {
             background-color: #4f4f4f;
         }
@@ -87,7 +95,7 @@
 
                 <div class="row tom-nav" style="" id="edit">
                     <div class="col">
-                        <center><a href="<?= base_url('admin/edit'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
                     </div>
                 </div>
 
@@ -105,19 +113,19 @@
 
                 <div class="row tom-nav" style="" id="kategori">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories') ?>" style="color: white;">Categories</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="testimoni">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Testimoni</a></center>
+                        <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="menubar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Menu Bar</a></center>
+                        <center><a href="<?= base_url('menubar') ?>" style="color: white;">Menu Bar</a></center>
                     </div>
                 </div>
 
@@ -154,103 +162,119 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <h6 style="color: black">Description</h6>
-                                    <textarea name="deskripsi" rows="2" cols="75"></textarea><br><br>
-                                    <h6 style="color: black">Photo</h6>
-                                    <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Choose File</button>
+                                    <?php foreach ($about as $abt) : ?>
+                                        <h6 style="color: black">Description</h6>
+                                        <textarea name="description" id="description" name="description" rows="10" cols="130"><?= $abt['deskripsi']; ?></textarea><br><br>
+                                        <div class="col-sm-9">
+                                            <div class="custom-file">
+                                                <h6 style="color: black">Current Photo</h6>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img src="<?= base_url('assets/') . $abt['image'] ?>" class="img-thumbnail">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="custom-file">
+                                                                <button type="file" class="btn" style=" background-color: #31A38E; color: white;">Choose File</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-10">
+
+                                            </div>
+
+                                            <div class="col-2">
+                                                <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
+                                            </div>
+                                        </div>
+                                        <br>
                                 </div>
+                                <br>
+
+                                <!-- LOCATION -->
+
+                                <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                                    <div class="row" style="background-color: #d6d6d6;">
+                                        <div class="col">
+                                            <center><a href="" style=" color: #31A38E; font-weight: bold;0">Location</a></center>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <h6 style="color: black">Location</h6>
+                                            <textarea name="location" rows="1" cols="75"></textarea><br><br>
+                                            <h6 style="color: black">On the day</h6>
+                                            <textarea name="ontheday" rows="1" cols="75"></textarea><br><br>
+                                            <h6 style="color: black">Open</h6>
+                                            <textarea name="open" rows="1" cols="20"></textarea>
+                                            <h6 style="color: black">Close</h6>
+                                            <textarea name="close" rows="1" cols="20"></textarea><br><br>
+                                            <h6 style="color: black">Photo</h6>
+                                            <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Choose File</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-10">
+
+                                        </div>
+
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                                <br>
+
+                                <!-- FAQ -->
+                                <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                                    <div class="row" style="background-color: #d6d6d6;">
+                                        <div class="col">
+                                            <center><a href="" style=" color: #31A38E; font-weight: bold;">FAQ</a></center>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <h6 style="color: black">FAQ</h6>
+                                            <textarea name="faq" rows="2" cols="75"></textarea><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-10">
+
+                                        </div>
+
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+
                             </div>
-
-                            <div class="row">
-                                <div class="col-10">
-
-                                </div>
-
-                                <div class="col-2">
-                                    <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-
-                        <!-- LOCATION -->
-
-                        <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                            <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                    <center><a href="" style=" color: #31A38E; font-weight: bold;0">Location</a></center>
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col">
-                                    <h6 style="color: black">Location</h6>
-                                    <textarea name="location" rows="1" cols="75"></textarea><br><br>
-                                    <h6 style="color: black">On the day</h6>
-                                    <textarea name="ontheday" rows="1" cols="75"></textarea><br><br>
-                                    <h6 style="color: black">Open</h6>
-                                    <textarea name="open" rows="1" cols="20"></textarea>
-                                    <h6 style="color: black">Close</h6>
-                                    <textarea name="close" rows="1" cols="20"></textarea><br><br>
-                                    <h6 style="color: black">Photo</h6>
-                                    <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Choose File</button>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-10">
-
-                                </div>
-
-                                <div class="col-2">
-                                    <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-
-                        <!-- FAQ -->
-                        <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                            <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                    <center><a href="" style=" color: #31A38E; font-weight: bold;">FAQ</a></center>
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col">
-                                    <h6 style="color: black">FAQ</h6>
-                                    <textarea name="faq" rows="2" cols="75"></textarea><br><br>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-10">
-
-                                </div>
-
-                                <div class="col-2">
-                                    <button type="button" class="btn btn-primary" style=" background-color: #31A38E; color: white;">Save</button>
-                                </div>
-                            </div>
-                            <br>
                         </div>
 
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="bootstrap/js/bootstrap.js"></script>
 
 </body>
 

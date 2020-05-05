@@ -13,7 +13,7 @@ class Testimoni_user extends CI_Controller
     {
         $data['title'] = 'Testimoni';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['komentar'] = $this->komentar_model->data_komentar();
+        $data['komentar'] = $this->db->get_where('komentar', ['id_user' => $this->session->userdata('id_user')])->result_array();
         //if ($this->form_validation->run() == FALSE) {
         if ($this->session->userdata('email') === null) {
             $this->load->view('templates/header', $data);

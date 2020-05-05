@@ -120,6 +120,7 @@
                                 <div class="form-group">
                                     <label for="testimoni" style="color: black;">Testimoni</label>
                                     <textarea type="text" class="form-control" rows="5" name="testimoni" id="testimoni" style="background-color: white;"></textarea>
+                                    <input type="hidden" name="id" id="id" value="<?= $user['id'] ?>">
                                     <?= form_error('testimoni', '<small class="text-danger pl-3">', '</small'); ?>
                                 </div>
 

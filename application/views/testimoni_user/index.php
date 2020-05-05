@@ -118,7 +118,11 @@
 
               <div class="row" style="background-color: #d6d6d6;">
                 <div class="col">
-                  <a href="<?= base_url('add_testimoni'); ?>" style="color: #31A38E; font-weight: bold;">+Add new</a>
+                  <div class="col"><br>
+                    <button class="btn" style="background-color: #31A38E; color: white;">
+                      <a href="<?= base_url('add_testimoni') ?>" style=" color: white; font-weight: bold;">+ Add New</a>
+                    </button><br><br>
+                  </div>
                 </div>
               </div>
 
@@ -138,9 +142,9 @@
                         <?php foreach ($komentar as $rt) : ?>
                           <td>
                             <?php if (strlen($rt['isi_komentar']) > 100) : ?>
-                              <li style='list-style-type: none;'><?= substr($rt['isi_komentar'], 0, 100); ?> ...</li>
+                              <li style='list-style-type: none;'><?= substr($rt['isi_komentar'], 0, 100) ?> ...</li>
                             <?php else : ?>
-                              <li style='list-style-type: none;'><?= $rt['isi_komentar']; ?></li>
+                              <li style='list-style-type: none;'><?= $rt['isi_komentar'] ?></li>
                             <?php endif ?>
                           </td>
                           <td> <a href="#" class="p-1 mb-2 bg-success text-white">Edit</a> |

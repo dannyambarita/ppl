@@ -151,7 +151,7 @@
                                             <label for="name">
                                                 <h6 style="color: black">Name</h6>
                                             </label><br>
-                                            <input type="text" id="name" name="name" rows="1" cols="75"></input>
+                                            <input type="text" id="name" name="name"></input>
                                             <br><br>
                                         </div>
 
@@ -161,7 +161,7 @@
                                             </label><br>
                                             <select class="form-control" id="category" name="category" style="width:200px">
                                                 <?php foreach ($roti_role as $rtrl) {
-                                                    echo '<option value="' . $rtrl->jenis_roti . '">' . $rtrl->jenis_roti . '</option>';
+                                                    echo '<option value="' . $rtrl->jenis_roti . '" style="color: black">' . $rtrl->jenis_roti . '</option>';
                                                 }
                                                 ?>
                                             </select>
@@ -186,7 +186,18 @@
 
                                         <div class="form-group">
                                             <label for="photo">
-                                                <h6 style="color: black">Photo</h6>
+                                                <div class="col-sm-10" style="color: black">Current Picture</div>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-sm-3">
+                                                            <img src="<?= base_url('assets/img/roti/') . $roti['gambar_roti'] ?>" class="img-thumbnail">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="custom-file">
+                                                                <input type="file" style="color: black" id="image" name="image">
+                                                            </div>
+                                                        </div>
+                                                        <h6 style="color: black">Photo</h6>
                                             </label><br>
                                             <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
                                             <br>
@@ -196,8 +207,11 @@
                                                 <h6 style="color: black">Special</h6>
                                             </label><br>
                                             <select class="form-control" id="special" name="special" style="width:71px">
-                                                <option value="1">Yes</option>
-                                                <option value="2">No</option>
+                                                <option disabled selected> choose </option>
+                                                <?php foreach ($special_role as $sprl) {
+                                                    echo '<option value="' . $sprl->nama_special . '">' . $sprl->nama_special . '</option>';
+                                                }
+                                                ?>
                                             </select> <br><br>
 
                                             <button type="submit" value="upload" class="btn" id="save" name="save" onclick="Swal('succes','succes','succes')" style="background-color: #31A38E; color: white;">Save</button>

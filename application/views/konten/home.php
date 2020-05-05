@@ -106,8 +106,7 @@
       <div class="col-5">
         <center><a href="<?= base_url(); ?>deskripsi"><img src="assets/kategori2.png" alt="" width="400px"></a></center>
         <center>
-          <p><?php $sql_query = "select * from roti where jenis_roti='Bread'";
-              $get_query = $this->db->query($sql_query); ?>
+          <p>HOUSE CAKE
           </p>
         </center>
       </div>

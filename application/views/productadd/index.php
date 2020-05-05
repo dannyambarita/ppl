@@ -49,7 +49,9 @@
                         <center>Jon's Admin</center>
                     </div>
                 </div>
+
                 <br>
+
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
@@ -73,25 +75,33 @@
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
+
                         <center><a href="<?= base_url('categories'); ?>" style="color: white; display:block; text-decoration:none;">Categories</a></center>
+
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
+
                         <center><a href="#" style="color: white; display:block; text-decoration:none;">Testimoni</a></center>
+
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
+
                         <center><a href="#" style="color: white; display:block; text-decoration:none;">User</a></center>
+
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
+
                         <center><a href="aboutus_admin" style="color: white; display:block; text-decoration:none;">About Us</a></center>
+
                     </div>
                 </div>
 
@@ -100,6 +110,7 @@
                         <center><a href="<?= base_url('location_admin'); ?>" style="color: white; display:block; text-decoration:none;">Location</a></center>
                     </div>
                 </div>
+
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
@@ -110,6 +121,7 @@
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
                         <center><a href="<?= base_url('login/logout') ?>" style="color: white; display:block; text-decoration:none;">Logout</a></center>
+
                     </div>
                 </div>
             </div>
@@ -159,8 +171,7 @@
                                         <label for="price">
                                             <h6 style="color: black">Price</h6>
                                         </label><br>
-                                        <input type="number" id="price" name="price" value="<?= set_value('price'); ?>">
-                                        </ti>
+                                        <input type="number" id="price" name="price">
                                         <?= form_error('price', '<small class="text-danger pl-3">', '</small'); ?>
                                         <br><br>
                                     </div>

@@ -75,17 +75,14 @@
           </div>
         </div>
 
-        <div class="row" style="background-color: #4f4f4f;">
-          <div class="col">
-            <br>
-            <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
-            <p></p>
+        <br>
 
-            <div class="row tom-nav" style="" id="admin">
-              <div class="col">
-                <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
-              </div>
-            </div>
+        <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
+        <p></p>
+
+        <div class="row tom-nav" style="" id="overview">
+          <div class="col">
+            <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
           </div>
         </div>
 
@@ -109,19 +106,19 @@
 
         <div class="row tom-nav" style="" id="kategori">
           <div class="col">
-            <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
+            <center><a href="<?= base_url('categories') ?>" style="color: white;">Categories</a></center>
           </div>
         </div>
 
         <div class="row tom-nav" style="" id="testimoni">
           <div class="col">
-            <center><a href="#" style="color: white;">Testimoni</a></center>
+            <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
           </div>
         </div>
 
         <div class="row tom-nav" style="" id="menubar">
           <div class="col">
-            <center><a href="<?= base_url('menubar'); ?>" style="color: white;">Menu Bar</a></center>
+            <center><a href="<?= base_url('menubar') ?>" style="color: white;">Menu Bar</a></center>
           </div>
         </div>
 
@@ -135,10 +132,6 @@
           <div class="col">
             <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
           </div>
-        </div>
-
-        <div class="row" style="background-color: #4f4f4f;">
-
         </div>
       </div>
 
@@ -157,8 +150,10 @@
               <br>
 
               <div class="row" style="background-color: #d6d6d6;">
-                <div class="col">
-                  <a href="<?= base_url() ?>categoriesadd" style="color: #31A38E; font-weight: bold;">+Add new</a>
+                <div class="col"><br>
+                  <button class="btn" style="background-color: #31A38E; color: white;">
+                    <a href="<?= base_url('categoriesadd') ?>" style=" color: white; font-weight: bold;">+ Add New</a>
+                  </button><br><br>
                 </div>
               </div>
 

@@ -1,6 +1,6 @@
 <?php
 
-class Editadmin extends CI_Controller
+class Edituser extends CI_Controller
 {
 
     function __construct()
@@ -22,7 +22,7 @@ class Editadmin extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header2', $data);
-            $this->load->view('editadmin/index', $data);
+            $this->load->view('edituser/index', $data);
         } else {
             $name = $this->input->post('name');
             $email = $this->input->post('email');
@@ -54,7 +54,7 @@ class Editadmin extends CI_Controller
             $this->db->where('email', $email);
             $this->db->update('user');
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your Profile has been Updated!</div>');
-            redirect('admin');
+            redirect('user');
         }
     }
 
