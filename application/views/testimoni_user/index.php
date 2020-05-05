@@ -142,9 +142,9 @@
                         <?php foreach ($komentar as $rt) : ?>
                           <td>
                             <?php if (strlen($rt['isi_komentar']) > 100) : ?>
-                              <li style='list-style-type: none;'><?= substr($rt['isi_komentar'], 0, 100); ?> ...</li>
+                              <li style='list-style-type: none;'><?= substr($rt['isi_komentar'], 0, 100) ?> ...</li>
                             <?php else : ?>
-                              <li style='list-style-type: none;'><?= $rt['isi_komentar']; ?></li>
+                              <li style='list-style-type: none;'><?= $rt['isi_komentar'] ?></li>
                             <?php endif ?>
                           </td>
                           <td> <a href="#" class="p-1 mb-2 bg-success text-white">Edit</a> |
