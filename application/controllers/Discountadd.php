@@ -17,7 +17,7 @@ class Discountadd extends CI_Controller
         $upload_image = $_FILES['userfile']['name'];
         if ($upload_image) {
             $config = array(
-                'upload_path'          => './assets/img/roti/',
+                'upload_path'          => base_url('assets/img/roti/'),
                 'allowed_types'        => 'gif|jpg|png',
                 'overwrite'            => true,
                 'max_size'             => 1024

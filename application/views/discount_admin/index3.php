@@ -36,7 +36,7 @@
             padding-bottom: 10px;
         }
     </style>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>">
 </head>
 
 <body>
@@ -49,7 +49,9 @@
                         <center>Jon's Admin</center>
                     </div>
                 </div>
+
                 <br>
+
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
@@ -122,52 +124,34 @@
 
                 <div class="row">
                     <div class="col">
-                        <!-- DISCOUNT ADMIN -->
-                        <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
-                            <div class="col">
-                              <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
-                            </div>
-                        </div>
+                      <!-- Discount admin -->
+                      <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
+                          <div class="col">
+                            <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
+                            <a href="#" style=" color: #31A38E; text-decoration:none; font-weight: bold;"> > Add </a>
+                          </div>
+                      </div>
 
-                        <br>
+                      <br>
 
-                        <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                            <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                  <br>
-                                    <a class="btn" id="tombol" href="<?= base_url('discount_admin/discountadd') ?>" style="color: white; text-decoration:none; font-weight: bold;">+ Add New</a>
+                      <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                          <?= form_open_multipart('discountadd'); ?>
+                          <div class="row" style="background-color: #d6d6d6;">
+                              <div class="col">
+                                <br>
+                                  <h6 style="color: black">Description</h6>
+                                  <textarea name="deskripsi" rows="2" cols="75" value="<?= set_value('deskripsi'); ?>"></textarea><br><br>
+                                  <h6 style="color: black">Photo</h6>
+                                  <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;"></input>
                                   <br><br>
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col">
-                                  <table class="table">
-                                    <tr>
-                                      <th>Photo</th>
-                                      <th>Description</th>
-                                      <th>Action</th>
-                                    </tr>
-
-                                    <tr>
-                                      <?php foreach ($diskon as $x){ ?>
-                                        <tr>
-                                          <td><img width="100px" src="<?php echo base_url('assets/img/roti/').$x['foto']; ?>" alt=""></td>
-                                          <td><?php echo $x['deskripsi']; ?></td>
-                                          <td><a href="#" class="btn btn-danger">Delete</a></td>
-                                        </tr>
-                                        
-                                      <?php } ?>
-                                    </tr>
-                                  </table>
-
-                                </div>
-                            </div>
-                            <br>
+                                  <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">ADD</button>
+                                  <br>
+                                  <br>
+                              </div>
+                          </div>
+                          <?= form_close(); ?>
                         </div>
-
+                      <br>
                     </div>
                 </div>
 
@@ -175,8 +159,8 @@
         </div>
     </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="<?php echo base_url('js/jquery-3.4.1.min.js'); ?>"></script>
+    <script src="<?php echo base_url('bootstrap/js/bootstrap.js'); ?>"></script>
 
 </body>
 
