@@ -9,11 +9,9 @@ class Menubar extends CI_Controller
         if ($this->session->userdata('email') === null) {
             $this->load->view('templates/header', $data);
             $this->load->view('menubar/index', $data);
-            $this->load->view('templates/footer');
         } else {
             $this->load->view('templates/header2', $data);
             $this->load->view('menubar/index', $data);
-            $this->load->view('templates/footer');
         }
     }
 }

@@ -1,0 +1,41 @@
+.sidebar {
+  height:100%; /* Full-height: remove this if you want "auto" height */
+  width: 320px; /* Set the width of the sidebar */
+  position: fixed;
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color:#4f4f4f; /* Black */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #31A38E;
+}
+
+.aktif{
+  background-color: #31A38E;
+}
+
+.main{
+  margin-left: 350px;
+  height: 850px;
+  width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {display: none;}
+  .main {margin-left: 0px;}
+}

@@ -7,52 +7,28 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
-        #overview {
+        #sidebar {
             background-color: #4f4f4f;
         }
 
-        #overview:hover {
+        #sidebar:hover {
             background-color: #31A38E;
         }
 
         #product {
-            background-color: #4f4f4f;
+            background-color: #31A38E;
         }
 
         #product:hover {
             background-color: #31A38E;
         }
 
-        #kategori {
-            background-color: #4f4f4f;
+        #tombol {
+          background-color: #31A38E;
         }
 
-        #kategori:hover {
-            background-color: #31A38E;
-        }
-
-        #testimoni {
-            background-color: #4f4f4f;
-        }
-
-        #testimoni:hover {
-            background-color: #31A38E;
-        }
-
-        #menubar {
-            background-color: #4f4f4f;
-        }
-
-        #menubar:hover {
-            background-color: #31A38E;
-        }
-
-        #user {
-            background-color: #4f4f4f;
-        }
-
-        #user:hover {
-            background-color: #31A38E;
+        #tombol:hover{
+          background-color: #4f4f4f;
         }
 
         .tom-nav {
@@ -77,56 +53,70 @@
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
-                <div class="row tom-nav" style="" id="edit">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white; display:block; text-decoration:none;">Edit Profile</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="overview">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Over View</a></center>
+                        <center><a href="<?= base_url('discount_admin') ?>" style="color: white; display:block; text-decoration:none;">Discount</a></center>
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="product">
                     <div class="col">
-                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
+                        <center><a href="<?= base_url('product') ?>" style="color: white; display:block; text-decoration:none;">Product</center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="kategori">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('categories'); ?>" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories'); ?>" style="color: white; display:block; text-decoration:none;">Categories</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="testimoni">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Testimoni</a></center>
+                        <center><a href="#" style="color: white; display:block; text-decoration:none;">Testimoni</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="menubar">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('menubar'); ?>" style="color: white;">Menu Bar</a></center>
+                        <center><a href="<?= base_url('menubar'); ?>" style="color: white; display:block; text-decoration:none;">Menu Bar</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="user">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">User</a></center>
+                        <center><a href="#" style="color: white; display:block; text-decoration:none;">User</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="user">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
+                        <center><a href="<?= base_url('aboutus_admin'); ?>" style="color: white; display:block; text-decoration:none;">About Us</a></center>
                     </div>
                 </div>
 
-                <div class="row" style="background-color: #4f4f4f;">
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('location_admin'); ?>" style="color: white; display:block; text-decoration:none;">Location</a></center>
+                    </div>
+                </div>
 
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('faq'); ?>" style="color: white; display:block; text-decoration:none;">FAQ</a></center>
+                    </div>
+                </div>
+
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('login/logout') ?>" style="color: white; display:block; text-decoration:none;">Logout</a></center>
+                    </div>
                 </div>
             </div>
 
@@ -136,19 +126,20 @@
                     <div class="col">
                         <!-- PRODUCT -->
                         <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
-                            <div class="col">
-                                <a style=" color: #31A38E; font-weight: bold;">Admin > Product</a>
-                            </div>
+                          <div class="col">
+                            <a href="<?= base_url('product'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Product</a>
+                          </div>
                         </div>
 
                         <br>
 
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px;">
                             <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col"><br>
-                                    <button class="btn" style="background-color: #31A38E; color: white;">
-                                        <a href="<?= base_url('productadd') ?>" style=" color: white; font-weight: bold;">+ Add New :3</a>
-                                    </button><br><br>
+                                <div class="col">
+                                  <br>
+                                  <button class="btn" id="tombol">
+                                    <a href="<?= base_url('productadd') ?>" style="color: white; display:block; text-decoration:none; font-weight: bold;">+ Add New</a>
+                                  </button><br><br>
                                 </div>
                             </div>
 

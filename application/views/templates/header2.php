@@ -8,8 +8,9 @@
   <title>Website Jon's Bakery</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
 
-  <style media="screen">
+  <style>
     #discount {
       background-color: white;
     }
