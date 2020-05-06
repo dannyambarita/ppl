@@ -21,43 +21,35 @@
       </div>
     </div>
 
-    <div class="container-fluid" style="">
-      <?php foreach ($diskon as $d) : ?>
+    <div class="container" style="">
+      <?php foreach ($location as $l) : ?>
         <td>
           <div class="row" style="">
-              <div class="col-1">
+              <div class="col-2">
 
               </div>
 
-              <div class="col-4" style="background-color: black">
-                <center><img src="<?= base_url('assets/img/roti/') . $d['foto']; ?>" width="350px" ></center>
+              <div class="col-5">
+                <img src="<?= base_url('assets/img/toko/') . $l['toko']; ?>" width="470px" >
               </div>
 
-              <div class="col-6" style="background-color: black"><br>
-                <center><h5><?= $d['deskripsi']; ?></h5></center>
+              <div class="col-3" style="background-color:#E4E4E4;">
+                <br>
+                <p style="text-align:left; font-size:25px; color:black;"><?= $l['provinsi']; ?></p>
+                <hr style="background-color:black; margin-top: -15px;">
+                <p style="text-align: left;  font-weight: bold; color:black;"><?= $l['alamat']; ?></p>
+                <p style="text-align: left; color:black;"><?= $l['hari1']; ?> - <?= $l['hari2']; ?></p>
+                <p style="text-align: left; color:black;"><?= $l['jam1']; ?> - <?= $l['jam2']; ?></p>
+                <p style="text-align: left; color:black;"><?= $l['keterangan']; ?></p>
+                <a href="<?= $l['link']; ?>" class="btn" id="direction">DIRECTION</a>
               </div>
 
-              <div class="col-1">
+              <div class="col-2">
 
               </div>
           </div>
           <hr style="background-color: white;">
         </td><?php endforeach; ?>
-
-      <div class="row">
-        <div class="col-9">
-          <a href="<?= base_url(); ?>"><img src="assets/visit.png" alt="" width="500px"></a>
-        </div>
-
-        <div class="col-3" style="background-color:#E4E4E4;">
-          <p style="text-align:left; font-size:25px; color:black;">COME & VISIT</p>
-          <hr style="background-color:black; margin-top: -15px;">
-          <p style="text-align: left;  font-weight: bold; color:black;">Jl. Jend. Sudirman No.55, Kota Bandar Lampung </p>
-          <p style="text-align: left; color:black;">Wednesday-Monday <br>6:30 AM - 9.30 PM </p>
-          <p style="text-align: left; color:black;">Tuesday <br>7.30 AM - 9.30 PM </p>
-          <a href="" class="btn" id="direction">DIRECTION</a>
-        </div>
-      </div>
     </div>
   </div>
   <br>

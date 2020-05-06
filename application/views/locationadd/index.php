@@ -133,33 +133,40 @@
                         <br>
 
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                            <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                  <br>
-                                  <h6 style="color: black">Location</h6>
-                                  <textarea name="location" rows="1" cols="75"></textarea><br><br>
-                                  <h6 style="color: black">On the day</h6>
-                                  <textarea name="ontheday" rows="1" cols="75"></textarea><br><br>
-                                  <h6 style="color: black">Open</h6>
-                                  <textarea name="open" rows="1" cols="20"></textarea>
-                                  <h6 style="color: black">Close</h6>
-                                  <textarea name="close" rows="1" cols="20"></textarea><br><br>
-
-                                  <div class="form-group">
-                                      <label for="photo">
-                                          <h6 style="color: black">Photo</h6>
-                                      </label><br>
-                                      <input type="file" name="photo" id="photo" class="btn" style="color: black"></input>
-                                      <br><br>
-                                  </div>
-
-                                  <button class="btn" id="tombol">
-                                      <a href="#" style="color: white; display:block; text-decoration:none; font-weight: bold;">ADD</a>
-                                  </button><br><br>
-                                </div>
-                            <br>
+                          <?= form_open_multipart('locationadd/locationdb'); ?>
+                          <div class="row" style="background-color: #d6d6d6;">
+                            <div class="col">
+                              <br>
+                              <h6 style="color: black">Photo</h6>
+                              <input type="file" name="filetoko" id="filetoko" class="btn" style=" color: black;">
+                              <br><br>
+                              <h6 style="color: black">Province</h6>
+                              <textarea name="provinsi" rows="1" cols="20" value="<?= set_value('provinsi'); ?>"></textarea><br><br>
+                              <br><br>
+                              <h6 style="color: black">Address</h6>
+                              <textarea name="alamat" rows="2" cols="75" value="<?= set_value('alamat'); ?>"></textarea><br><br>
+                              <br><br>
+                              <h6 style="color: black">Day</h6>
+                              <textarea name="hari1" rows="1" cols="10" value="<?= set_value('hari1'); ?>"></textarea>
+                              <textarea name="hari2" rows="1" cols="10" value="<?= set_value('hari2'); ?>"></textarea>
+                              <br><br>
+                              <h6 style="color: black">Times</h6>
+                              <input type="time" id="waktu" name="jam1" value="<?= set_value('jam1'); ?>">
+                              <input type="time" id="waktu" name="jam2" value="<?= set_value('jam2'); ?>">
+                              <br><br>
+                              <h6 style="color: black">Note</h6>
+                              <textarea name="keterangan" rows="2" cols="40" value="<?= set_value('keterangan'); ?>"></textarea>
+                              <br><br>
+                              <h6 style="color: black">Direction</h6>
+                              <textarea name="link" rows="2" cols="40" value="<?= set_value('link'); ?>"></textarea>
+                              <br><br>
+                              <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">ADD</button>
+                              <br><br>
+                            </div>
+                          </div>
+                          <?= form_close(); ?>
                         </div>
-
+                        <br>
                     </div>
                 </div>
 
