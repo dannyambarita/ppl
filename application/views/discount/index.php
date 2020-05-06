@@ -15,19 +15,19 @@
           <?php foreach ($diskon as $d) : ?>
             <td>
               <div class="row" style="">
-                  <div class="col-2">
+                  <div class="col-1">
 
                   </div>
 
-                  <div class="col-3" style="background-color: black">
-                    <center><img src="<?= base_url('assets/img/roti/') . $d['foto']; ?>" width="300px"></center>
+                  <div class="col-4" style="background-color: black">
+                    <center><img src="<?= base_url('assets/img/roti/') . $d['foto']; ?>" width="350px" ></center>
                   </div>
 
-                  <div class="col-5" style="background-color: black"><br>
-                    <center><p><?= $d['deskripsi']; ?></p></center>
+                  <div class="col-6" style="background-color: black"><br>
+                    <center><h5><?= $d['deskripsi']; ?></h5></center>
                   </div>
 
-                  <div class="col-2">
+                  <div class="col-1">
 
                   </div>
               </div>

@@ -8,8 +8,8 @@ class product_model extends CI_model
             "nama_roti" => $this->input->post('name', true),
             "harga_roti" => $this->input->post('price', true),
             "jenis_roti" => $this->input->post('category', true),
-            "deskripsi_roti" => $this->input->post('description', true),
-            "special" => $this->input->post('special', true)
+            "deskripsi_roti" => $this->input->post('description', true)//,
+            //"special" => $this->input->post('special', true)
         ];
         $upload_image = $_FILES['photo']['name'];
         if ($upload_image) {
