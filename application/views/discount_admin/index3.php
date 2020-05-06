@@ -24,11 +24,11 @@
         }
 
         #tombol {
-          background-color: #31A38E;
+            background-color: #31A38E;
         }
 
-        #tombol:hover{
-          background-color: #4f4f4f;
+        #tombol:hover {
+            background-color: #4f4f4f;
         }
 
         .tom-nav {
@@ -124,35 +124,35 @@
 
                 <div class="row">
                     <div class="col">
-                      <!-- Discount admin -->
-                      <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
-                          <div class="col">
-                            <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
-                            <a href="#" style=" color: #31A38E; text-decoration:none; font-weight: bold;"> > Add </a>
-                          </div>
-                      </div>
-
-                      <br>
-
-                      <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                          <?= form_open_multipart('discountadd'); ?>
-                          <div class="row" style="background-color: #d6d6d6;">
-                              <div class="col">
-                                <br>
-                                  <h6 style="color: black">Description</h6>
-                                  <textarea name="deskripsi" rows="2" cols="75" value="<?= set_value('deskripsi'); ?>"></textarea>
-                                  <br><br>
-                                  <h6 style="color: black">Photo</h6>
-                                  <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;">
-                                  <br><br>
-                                  <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">ADD</button>
-                                  <br>
-                                  <br>
-                              </div>
-                          </div>
-                          <?= form_close(); ?>
+                        <!-- Discount admin -->
+                        <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
+                            <div class="col">
+                                <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
+                                <a href="#" style=" color: #31A38E; text-decoration:none; font-weight: bold;"> > Add </a>
+                            </div>
                         </div>
-                      <br>
+
+                        <br>
+
+                        <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                            <?= form_open_multipart('discountadd'); ?>
+                            <div class="row" style="background-color: #d6d6d6;">
+                                <div class="col">
+                                    <br>
+                                    <h6 style="color: black">Description</h6>
+                                    <textarea name="deskripsi" rows="2" cols="75"></textarea>
+                                    <br><br>
+                                    <h6 style="color: black">Photo</h6>
+                                    <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;">
+                                    <br><br>
+                                    <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">ADD</button>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                            <?= form_close(); ?>
+                        </div>
+                        <br>
                     </div>
                 </div>
 

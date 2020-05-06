@@ -64,7 +64,6 @@
       <div class="flex-container">
         <?php foreach ($roti as $rt) : ?>
           <td>
-
             <div class="card" style="width: 21rem;">
               <div class="col-auto" style="background-color: black"><br>
                 <center><img src="<?= base_url('assets/img/roti/') . $rt['gambar_roti']; ?>" width="300px"></center>

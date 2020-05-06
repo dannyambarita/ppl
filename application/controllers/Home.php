@@ -16,6 +16,10 @@ class Home extends CI_Controller
   {
     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
     $data['roti'] = $this->roti_model->data_roti();
+    $data['roti_promo'] = $this->roti_model->data_roti_promo();
+    $data['roti_random'] = $this->roti_model->data_roti_random();
+    $data['roti_best'] = $this->roti_model->data_roti_best();
+    $data['roti_role'] = $this->roti_model->data_roti_role();
     if ($this->session->userdata('email') === null) {
       $this->load->view('templates/header', $data);
       $this->load->view('konten/home', $data);
