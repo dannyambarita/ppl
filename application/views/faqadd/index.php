@@ -128,20 +128,21 @@
                         <br>
 
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                          <?= form_open_multipart('faqadd/faqdb'); ?>
                             <br>
                             <div class="row">
                                 <div class="col">
                                     <h6 style="color: black">Question</h6>
-                                    <textarea name="faq" rows="2" cols="75"></textarea><br><br>
+                                    <textarea name="pertanyaan" rows="2" cols="75" value="<?= set_value('question'); ?>"></textarea><br><br>
 
                                     <h6 style="color: black">Answer</h6>
-                                    <textarea name="faq" rows="2" cols="75"></textarea><br><br>
+                                    <textarea name="jawaban" rows="2" cols="75" value="<?= set_value('answer'); ?>"></textarea><br><br>
 
-                                    <button class="btn" id="tombol">
-                                        <a href="#" style="color: white; display:block; text-decoration:none; font-weight: bold;">ADD</a>
-                                    </button><br><br>
+                                    <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">ADD</button>
+                                    <br><br>
                                 </div>
                             </div>
+                          <?= form_close(); ?>
                             <br>
                         </div>
 

@@ -156,21 +156,18 @@
                                         <tr>
                                           <td><img width="100px" src="<?php echo base_url('assets/img/roti/').$x['foto']; ?>" alt=""></td>
                                           <td><?php echo $x['deskripsi']; ?></td>
-                                          <td><a href="#" class="btn btn-danger">Delete</a></td>
+                                          <td><a href="<?php echo base_url('discountadd/discountdel/') . $x['id'];?>" class="btn btn-danger">Delete</a></td>
                                         </tr>
-                                        
+
                                       <?php } ?>
                                     </tr>
                                   </table>
-
                                 </div>
                             </div>
                             <br>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

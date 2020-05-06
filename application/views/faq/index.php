@@ -135,9 +135,8 @@
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col">
                                   <br>
-                                  <button class="btn" id="tombol">
-                                    <a href="<?= base_url('faqadd') ?>" style="color: white; display:block; text-decoration:none; font-weight: bold;">+ Add New</a>
-                                  </button><br><br>
+                                  <a class="btn" id="tombol" href="<?= base_url('faqadd') ?>" style="color: white; text-decoration:none; font-weight: bold;">+ Add New</a>
+                                  <br><br>
                                 </div>
                             </div>
 
@@ -145,7 +144,24 @@
 
                             <div class="row">
                                 <div class="col">
-                                  <h4 style="color: black;">ISI TABEL LIST FAQ NYA BISA EDIT APUS</h2>
+                                  <table class="table">
+                                    <tr>
+                                      <th>Question</th>
+                                      <th>Answer</th>
+                                      <th>Action</th>
+                                    </tr>
+
+                                    <tr>
+                                      <?php foreach ($faq as $x){ ?>
+                                        <tr>
+                                          <td><?php echo $x['question']; ?></td>
+                                          <td><?php echo $x['answer']; ?></td>
+                                          <td><a href="<?php echo base_url('faqadd/faqdel/') . $x['id'];?>" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
+                                      <?php } ?>
+                                    </tr>
+                                  </table>
                                 </div>
                             </div>
                             <br>
