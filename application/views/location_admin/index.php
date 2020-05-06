@@ -135,9 +135,8 @@
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col">
                                   <br>
-                                  <button class="btn" id="tombol">
-                                    <a href="<?= base_url('locationadd') ?>" style="color: white; display:block; text-decoration:none; font-weight: bold;">+ Add New</a>
-                                  </button><br><br>
+                                  <a class="btn" id="tombol" href="<?= base_url('locationadd') ?>" style="color: white; text-decoration:none; font-weight: bold;">+ Add New</a>
+                                  <br><br>
                                 </div>
                             </div>
 
@@ -145,7 +144,38 @@
 
                             <div class="row">
                                 <div class="col">
-                                  <h4 style="color: black;">ISI TABEL LIST LOCATION NYA BISA EDIT APUS</h2>
+                                  <table class="table">
+                                    <tr>
+                                      <th>Photo</th>
+                                      <th>Province</th>
+                                      <th>Address</th>
+                                      <th>Day 1</th>
+                                      <!-- <th>Day 2</th> -->
+                                      <th>Time 1</th>
+                                      <!-- <th>Time 2</th> -->
+                                      <th>Note</th>
+                                      <th>Link</th>
+                                      <th>Action</th>
+                                    </tr>
+
+                                    <tr>
+                                      <?php foreach ($location as $x){ ?>
+                                        <tr>
+                                          <td><img width="100px" src="<?php echo base_url('assets/img/toko/').$x['toko']; ?>" alt=""></td>
+                                          <td><?php echo $x['provinsi']; ?></td>
+                                          <td><?php echo $x['alamat']; ?></td>
+                                          <td><?php echo $x['hari1']; ?>
+                                          <?php echo $x['hari2']; ?></td>
+                                          <td><?php echo $x['jam1']; ?>
+                                          <?php echo $x['jam2']; ?></td>
+                                          <td><?php echo $x['keterangan']; ?></td>
+                                          <td><?php echo $x['link']; ?></td>
+                                          <td><a href="<?php echo base_url('locationadd/locationdel/') . $x['id'];?>" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
+                                      <?php } ?>
+                                    </tr>
+                                  </table>
                                 </div>
                             </div>
                             <br>

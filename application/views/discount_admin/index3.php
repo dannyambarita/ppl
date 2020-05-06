@@ -140,9 +140,10 @@
                               <div class="col">
                                 <br>
                                   <h6 style="color: black">Description</h6>
-                                  <textarea name="deskripsi" rows="2" cols="75" value="<?= set_value('deskripsi'); ?>"></textarea><br><br>
+                                  <textarea name="deskripsi" rows="2" cols="75" value="<?= set_value('deskripsi'); ?>"></textarea>
+                                  <br><br>
                                   <h6 style="color: black">Photo</h6>
-                                  <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;"></input>
+                                  <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;">
                                   <br><br>
                                   <button type="submit" class="btn btn-primary" style=" background-color: #31A38E; color: white;">ADD</button>
                                   <br>

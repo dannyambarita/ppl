@@ -114,7 +114,9 @@
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>faqmenu" class="btn" id="faq">FAQ</a></center>
+
+      <center><a href="<?= base_url(); ?>faqtampil" class="btn" id="faq">FAQ</a></center>
+
     </div>
 
     <div class="col-2">
@@ -132,4 +134,5 @@
         let fileName = $(this).val().split('\\').pop();
         $(this).next('.custom-file-label').addClass("selected").html(fileName);
       });
+
     </script>
