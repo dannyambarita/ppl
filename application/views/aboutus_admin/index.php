@@ -24,11 +24,11 @@
         }
 
         #tombol {
-          background-color: #31A38E;
+            background-color: #31A38E;
         }
 
-        #tombol:hover{
-          background-color: #4f4f4f;
+        #tombol:hover {
+            background-color: #4f4f4f;
         }
 
         .tom-nav {
@@ -123,43 +123,74 @@
                 <div class="row">
                     <div class="col">
                         <!-- ABOUT US -->
-                        <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
-                            <div class="col">
-                              <a href="<?= base_url('aboutus_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">About Us</a>
-                            </div>
-                        </div>
 
-                        <br>
 
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
-                            <div class="row" style="background-color: #d6d6d6;">
-                                <div class="col">
-                                  <br>
-                                  <button class="btn" id="tombol">
-                                    <a href="<?= base_url('aboutusadd') ?>" style="color: white; display:block; text-decoration:none; font-weight: bold;">+ Add New</a>
-                                  </button><br><br>
-                                </div>
-                            </div>
 
-                            <br>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!-- ABOUT US -->
+                                <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
+                                    <div class="row" style="background-color: #d6d6d6;">
+                                        <div class="col">
+                                            <center><a href="" style=" color: #31A38E; font-weight: bold;">About Us</a></center>
+                                        </div>
+                                    </div>
 
-                            <div class="row">
-                                <div class="col">
-                                  <h4 style="color: black;">ISI TABEL LIST ABOUT US NYA BISA EDIT APUS</h2>
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <form class="aboutus" method="post" action="<?= base_url('aboutus_admin') ?>">
+                                                <?php foreach ($about as $abt) : ?>
+                                                    <h6 style="color: black">Description</h6>
+                                                    <input type="text" style="color: black" name="description" id="description" name="description" rows="10" cols="130"><?= $abt['deskripsi']; ?></input><br><br>
+                                                    <div class="col-sm-9">
+                                                        <div class="custom-file">
+                                                            <h6 style="color: black">Current Photo</h6>
+                                                            <div class="col-sm-10">
+                                                                <div class="row">
+                                                                    <div class="col-sm-3">
+                                                                        <img src="<?= base_url('assets/img/aboutus/') . $abt['image'] ?>" class="img-thumbnail">
+                                                                    </div>
+                                                                    <div class="col-sm-9">
+                                                                        <div class="custom-file">
+                                                                            <button type="file" class="btn" style=" background-color: #31A38E; color: white;">Choose File</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-10">
+
+                                                        </div>
+
+                                                        <div class="col-2">
+                                                            <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
+                                                        </div>
+                                            </form>
+                                        </div>
+                                        <br>
+                                    </div>
+
+                                    <br>
                                 </div>
+
                             </div>
-                            <br>
                         </div>
 
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="bootstrap/js/bootstrap.js"></script>
 
 </body>
 

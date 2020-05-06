@@ -135,7 +135,9 @@
     </div>
 
     <div class="col-2">
+
       <center><a href="<?= base_url(); ?>faqtampil" class="btn" id="faq">FAQ</a></center>
+
     </div>
 
     <div class="col-2">

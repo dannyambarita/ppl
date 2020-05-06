@@ -3,6 +3,7 @@
 class Faq_model extends CI_model
 {
 
+
     public function getData(){
       return $this->db->get('faq')->result_array();
     }
