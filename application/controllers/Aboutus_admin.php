@@ -15,17 +15,16 @@ class Aboutus_admin extends CI_Controller
     {
         $data['title'] = 'Admin Dashboard';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['about'] = $this->about_us_model->about_us();
+        $data['about'] = $this->db->get_where('about', array('id' => 1))->row_array();
 
         $this->form_validation->set_rules('description', 'Description', 'required|trim');
-
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header2', $data);
             $this->load->view('aboutus_admin/index', $data);
         } else {
             $description = $this->input->post('description');
             $this->db->set('deskripsi', $description);
-            redirect('aboutus');
+            redirect('aboutus_admin');
         }
     }
 }

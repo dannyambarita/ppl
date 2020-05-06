@@ -143,37 +143,40 @@
                                     <div class="row">
                                         <div class="col">
                                             <form class="aboutus" method="post" action="<?= base_url('aboutus_admin') ?>">
-                                                <?php foreach ($about as $abt) : ?>
-                                                    <h6 style="color: black">Description</h6>
-                                                    <input type="text" style="color: black" name="description" id="description" name="description" rows="10" cols="130"><?= $abt['deskripsi']; ?></input><br><br>
-                                                    <div class="col-sm-9">
-                                                        <div class="custom-file">
-                                                            <h6 style="color: black">Current Photo</h6>
-                                                            <div class="col-sm-10">
-                                                                <div class="row">
-                                                                    <div class="col-sm-3">
-                                                                        <img src="<?= base_url('assets/img/aboutus/') . $abt['image'] ?>" class="img-thumbnail">
-                                                                    </div>
-                                                                    <div class="col-sm-9">
-                                                                        <div class="custom-file">
-                                                                            <button type="file" class="btn" style=" background-color: #31A38E; color: white;">Choose File</button>
-                                                                        </div>
+                                                <div class="form-group">
+                                                    <label for="description" style="color: black;">Description</label>
+                                                    <input type="text" class="form-control" id="description" name="description" value="<?= $about['deskripsi'] ?>">
+                                                    <?= form_error('description', '<small class="text-danger pl-3">', '</small>'); ?>
+                                                    <br>
+                                                </div>
+                                                <h6 style="color: black">Description</h6>
+                                                <textarea style="color: black" name="description" id="description" rows="10" cols="130" readonly><?= $about['deskripsi']; ?></textarea><br><br>
+                                                <div class="col-sm-20">
+                                                    <div class="custom-file">
+                                                        <h6 style="color: black">Current Photo</h6>
+                                                        <div class="col-sm-10">
+                                                            <div class="row">
+                                                                <div class="col-sm-2">
+                                                                    <img src="<?= base_url('assets/img/aboutus/') . $about['image'] ?>" class="img-thumbnail">
+                                                                </div>
+                                                                <div class="col-sm-9">
+                                                                    <div class="custom-file">
+                                                                        <button type="file" class="btn" style=" background-color: #31A38E; color: white;">Choose File</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        <?php endforeach; ?>
                                                         </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-10">
 
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-10">
-
-                                                        </div>
-
-                                                        <div class="col-2">
-                                                            <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
-                                                        </div>
+                                                    <div class="col-2">
+                                                        <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
+                                                    </div>
                                             </form>
                                         </div>
                                         <br>
