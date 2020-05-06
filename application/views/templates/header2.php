@@ -72,9 +72,9 @@
   <div class="container-fluid">
     <div class="row" style="background-color:#31A38E; padding-top: 4px;padding-bottom:4px;">
       <div class="col-10">
-        <a href="https://facebook.com/"><img src="<?php echo base_url ('assets/facebook.svg'); ?>" alt="" width="27px"></a>
-        <a href="https://instagram.com/"><img src="<?php echo base_url ('assets/instagram.svg'); ?>" alt="" width="27px"></a>
-        <a href="https://google.com/"><img src="<?php echo base_url ('assets/google.svg'); ?>" alt="" width="27px"></a>
+        <a href="https://facebook.com/"><img src="<?php echo base_url('assets/facebook.svg'); ?>" alt="" width="27px"></a>
+        <a href="https://instagram.com/"><img src="<?php echo base_url('assets/instagram.svg'); ?>" alt="" width="27px"></a>
+        <a href="https://google.com/"><img src="<?php echo base_url('assets/google.svg'); ?>" alt="" width="27px"></a>
         <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
       </div>
       <div class="topbar-divider d-none d-sm-block"></div>
@@ -114,7 +114,7 @@
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>later" class="btn" id="faq">FAQ</a></center>
+      <center><a href="<?= base_url(); ?>faqmenu" class="btn" id="faq">FAQ</a></center>
     </div>
 
     <div class="col-2">
@@ -133,4 +133,3 @@
         $(this).next('.custom-file-label').addClass("selected").html(fileName);
       });
     </script>
-

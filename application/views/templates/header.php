@@ -136,7 +136,7 @@
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>later" class="btn" id="faq">FAQ</a></center>
+      <center><a href="<?= base_url(); ?>faqmenu" class="btn" id="faq">FAQ</a></center>
     </div>
 
     <div class="col-2">
