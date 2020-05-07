@@ -52,7 +52,7 @@ CREATE TABLE `diskon` (
   `deskripsi` varchar(600) NOT NULL,
   `foto` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +61,6 @@ CREATE TABLE `diskon` (
 
 LOCK TABLES `diskon` WRITE;
 /*!40000 ALTER TABLE `diskon` DISABLE KEYS */;
-INSERT INTO `diskon` VALUES (20,'dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ','diskon-06-05-2020-03:06:28am.png'),(21,'y7','diskon-06-05-2020-09:45:35am.png');
 /*!40000 ALTER TABLE `diskon` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,6 +112,37 @@ LOCK TABLES `komentar` WRITE;
 /*!40000 ALTER TABLE `komentar` DISABLE KEYS */;
 INSERT INTO `komentar` VALUES ('hello world!!',1,0),('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere velit tortor. In sagittis, sapien a laoreet pretium, lectus erat tempus leo, vitae dapibus dui ex eu lectus. Cras leo metus, venenatis ut ex nec, feugiat placerat risus. Quisque pulvinar est in mi tincidunt, sed volutpat elit mattis. Nullam lorem elit, ornare at nulla ac, imperdiet efficitur sapien. Vivamus egestas risus quis posuere mattis. Sed convallis tempor interdum.',2,0),('asdasd',3,0),('hello world',4,0);
 /*!40000 ALTER TABLE `komentar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `location`
+--
+
+DROP TABLE IF EXISTS `location`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `location` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `toko` varchar(30) NOT NULL,
+  `provinsi` varchar(30) NOT NULL,
+  `alamat` varchar(100) NOT NULL,
+  `hari1` varchar(10) NOT NULL,
+  `hari2` varchar(10) NOT NULL,
+  `jam1` varchar(15) NOT NULL,
+  `jam2` varchar(15) NOT NULL,
+  `keterangan` varchar(25) NOT NULL,
+  `link` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `location`
+--
+
+LOCK TABLES `location` WRITE;
+/*!40000 ALTER TABLE `location` DISABLE KEYS */;
+/*!40000 ALTER TABLE `location` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -284,4 +314,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-06 13:50:42
+-- Dump completed on 2020-05-06 19:52:57
