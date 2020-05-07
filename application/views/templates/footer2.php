@@ -53,8 +53,8 @@
 </div>
 </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
+<script src="<?php base_url('js/jquery-3.4.1.min.js');?>"></script>
+<script src="<?php base_url('bootstrap/js/bootstrap.js');?>"></script>
 </body>
 
 </html>

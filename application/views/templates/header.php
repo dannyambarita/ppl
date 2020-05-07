@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Website Jon's Bakery</title>
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="<?php base_url('bootstrap/css/bootstrap.css'); ?>">
   <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
   <link rel="stylesheet" href="assets/css/sidebar.css">
 

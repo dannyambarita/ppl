@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Website Jon's Bakery</title>
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>">
   <link rel="stylesheet" href="assets/css/sidebar.css">
 
   <style>
@@ -64,7 +64,7 @@
       background-color: #31A38E;
       color: white;
     }
-    
+
   </style>
 </head>
 

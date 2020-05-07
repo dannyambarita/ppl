@@ -21,7 +21,7 @@
     }
   </style>
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css') ?>">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
           <div class="carousel-inner">
             <?php
             $i = 0;
-            foreach ($roti_promo as $rti) : ?>
+            foreach ($roti_promo as $rti) { ?>
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="$i" class="active"></li>
               </ol>
@@ -40,7 +40,7 @@
                 <img class="d-block w-50" src="<?= base_url('assets/img/roti/') . $rti['gambar_roti']; ?>" width="100px">
               </div>
             <?php $i++;
-            endforeach; ?>
+          } ?>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

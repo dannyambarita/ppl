@@ -21,7 +21,7 @@
             font-size: 30px;
         }
     </style>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>">
 </head>
 
 <body>
@@ -76,7 +76,8 @@
                         </div>
                     </td><br><?php endforeach; ?>
             </div>
-
+            <script src="<?php echo base_url('js/jquery-3.4.1.min.js'); ?>"></script>
+            <script src="<?php echo base_url('bootstrap/js/bootstrap.js'); ?>"></script>
         </body>
 
         </html>
