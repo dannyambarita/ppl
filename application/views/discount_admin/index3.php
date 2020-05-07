@@ -142,19 +142,12 @@
                                     <h6 style="color: black">Description</h6>
                                     <textarea name="deskripsi" rows="2" cols="75"></textarea>
                                     <br><br>
-                                    <h6 style="color: black">Price</h6>
-                                    <input type="number" name="harga" id="harga"><a style="color: black"></a>
-                                    <br><br>
-                                    <h6 style="color: black">Discount</h6>
-                                    <input type="number" min="0" max="100" name="diskon" id="diskon"><a style="color: black"> %</a>
-                                    <br><br>
                                     <h6 style="color: black">Photo</h6>
                                     <input type="file" name="userfile" id="userfile" class="btn" style=" color: black;">
                                     <br><br>
                                     <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">ADD</button>
                                     <br>
                                     <br>
-
                                 </div>
                             </div>
                             <?= form_close(); ?>

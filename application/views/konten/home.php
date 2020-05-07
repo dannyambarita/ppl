@@ -34,10 +34,10 @@
             $i = 0;
             foreach ($roti_promo as $rti) : ?>
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="<?= $i ?>" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="$i" class="active"></li>
               </ol>
               <div class="carousel-item active">
-                <img src="<?= base_url('assets/img/roti/') . $rti['gambar_roti']; ?>" width="270px">
+                <img class="d-block w-50" src="<?= base_url('assets/img/roti/') . $rti['gambar_roti']; ?>" width="100px">
               </div>
             <?php $i++;
             endforeach; ?>
@@ -177,7 +177,7 @@
   </div>
   <?php foreach ($roti_best as $rti) : ?>
     <div class="col-3">
-      <center><a href="<?= base_url('Deskripsi/detail/') ?><?= $rti['id_roti'] ?>"><img src="<?= base_url('assets/img/roti/') . $rti['gambar_roti']; ?>" alt="" width="270px"></a></center>
+      <center><a href="<?= base_url(); ?>later"><img src="<?= base_url('assets/img/roti/') . $rti['gambar_roti']; ?>" alt="" width="270px"></a></center>
     </div>
 
     <div class="col-3">

@@ -24,11 +24,11 @@
         }
 
         #tombol {
-            background-color: #31A38E;
+          background-color: #31A38E;
         }
 
-        #tombol:hover {
-            background-color: #4f4f4f;
+        #tombol:hover{
+          background-color: #4f4f4f;
         }
 
         .tom-nav {
@@ -37,7 +37,6 @@
         }
     </style>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -126,7 +125,7 @@
                         <!-- DISCOUNT ADMIN -->
                         <div class="container" style="background-color: #d6d6d6; margin-left: 10px; margin-right: 10px;">
                             <div class="col">
-                                <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
+                              <a href="<?= base_url('discount_admin'); ?>" style=" color: #31A38E; text-decoration:none; font-weight: bold;">Discount</a>
                             </div>
                         </div>
 
@@ -135,9 +134,9 @@
                         <div class="container" style="background-color: #f0eee4; margin-left: 10px; margin-right: 10px;">
                             <div class="row" style="background-color: #d6d6d6;">
                                 <div class="col">
-                                    <br>
+                                  <br>
                                     <a class="btn" id="tombol" href="<?= base_url('discount_admin/discountadd') ?>" style="color: white; text-decoration:none; font-weight: bold;">+ Add New</a>
-                                    <br><br>
+                                  <br><br>
                                 </div>
                             </div>
 
@@ -145,31 +144,24 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <table class="table">
-                                        <tr>
-                                            <th>Photo</th>
-                                            <th>Description</th>
-                                            <th>Discount</th>
-                                            <th>Action</th>
-                                        </tr>
-
-                                        <tr>
-                                            <?php foreach ($diskon as $x) { ?>
-                                        <tr>
-                                            <?php
-                                                $a = $x['persen'];
-                                                $b = $x['harga'];
-                                                $c = $b - ($a / 100 * $b);
-                                            ?>
-                                            <td><img width="100px" src="<?php echo base_url('assets/img/roti/') . $x['foto']; ?>" alt=""></td>
-                                            <td><?= $x['deskripsi']; ?></td>
-                                            <td><?= $x['persen']; ?>% <a>from <?= $x['harga']; ?> to <?= $c; ?></a></td>
-                                            <td><a href="<?php echo base_url('discountadd/discountdel/') . $x['id']; ?>" class="btn btn-danger">Delete</a></td>
-                                        </tr>
-
-                                    <?php } ?>
+                                  <table class="table">
+                                    <tr>
+                                      <th>Photo</th>
+                                      <th>Description</th>
+                                      <th>Action</th>
                                     </tr>
-                                    </table>
+
+                                    <tr>
+                                      <?php foreach ($diskon as $x){ ?>
+                                        <tr>
+                                          <td><img width="100px" src="<?php echo base_url('assets/img/roti/').$x['foto']; ?>" alt=""></td>
+                                          <td><?php echo $x['deskripsi']; ?></td>
+                                          <td><a href="<?php echo base_url('discountadd/discountdel/') . $x['id'];?>" class="btn btn-danger">Delete</a></td>
+                                        </tr>
+
+                                      <?php } ?>
+                                    </tr>
+                                  </table>
                                 </div>
                             </div>
                             <br>

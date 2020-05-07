@@ -16,8 +16,6 @@ class Discountadd extends CI_Controller
   {
     $data = [
       "deskripsi" => $this->input->post('deskripsi', true),
-      "persen" => $this->input->post('diskon', true),
-      "harga" => $this->input->post('harga', true)
     ];
 
     $upload_image = $_FILES['userfile']['name'];

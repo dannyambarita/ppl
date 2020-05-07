@@ -11,7 +11,6 @@ class product_model extends CI_model
             "deskripsi_roti" => $this->input->post('description', true),
             "special" => $this->input->post('special', true)
         ];
-
         $upload_image = $_FILES['photo']['name'];
         if ($upload_image) {
             $config = array(

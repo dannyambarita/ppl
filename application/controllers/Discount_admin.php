@@ -2,12 +2,11 @@
 
 class Discount_admin extends CI_Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->helper('form');
-        $this->load->helper('url');
-        $this->load->model('discount_model');
+    public function __construct(){
+      parent::__construct();
+      $this->load->helper('form');
+      $this->load->helper('url');
+      $this->load->model('discount_model');
     }
 
     public function index()
