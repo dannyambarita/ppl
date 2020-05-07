@@ -150,7 +150,7 @@
                                     <div class="row" style="color: black;">
                                         <div class="col">
                                           <?= form_open_multipart('aboutus_admin/edit'); ?>
-                                                <?php foreach ($about as $abt) : ?>
+                                                <?php foreach ($about as $abt) { ?>
                                                     <h6 style="color: black">Description</h6>
                                                     <div class="kotak" style="background-color:white;">
                                                       <textarea  name="description" id="description"><?= $abt['deskripsi']; ?></textarea>
@@ -171,7 +171,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        <?php endforeach; ?>
+                                                        <?php } ?>
                                                         </div>
 
                                                     </div>
