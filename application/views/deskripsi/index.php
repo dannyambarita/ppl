@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col">
         <center>
-          <p style="font-size: 26px;">HOUSE CAKES</p>
+          <p style="font-size: 26px;"><?= $roti['jenis_roti'] ?></p>
         </center>
         <hr style="background-color:white; margin-top:-15px;">
       </div>
@@ -41,8 +41,8 @@
 
       </div>
     </div>
-
-    <br>
+    <p>Give Us Your Rating</p>
+    <a><i class="fas fa-star"></i></a>
 
     <div class="row">
       <div class="col">
