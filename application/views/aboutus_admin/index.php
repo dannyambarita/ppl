@@ -149,6 +149,7 @@
 
                                     <div class="row" style="color: black;">
                                         <div class="col">
+
                                           <?= form_open_multipart('aboutus_admin/edit'); ?>
                                                 <?php foreach ($about as $abt) : ?>
                                                     <h6 style="color: black">Description</h6>
@@ -168,25 +169,23 @@
                                                                         <div class="custom-file">
                                                                           <input type="file" name="foto-about" class="btn">
                                                                         </div>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        <?php endforeach; ?>
                                                         </div>
-
                                                     </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="row">
 
-                                                    <div class="row">
-                                                        <div class="col-10">
+                                                    <div class="col">
+                                                        <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
+                                                    </div>
+                                              <?= form_close(); ?>
 
-                                                        </div>
-
-                                                        <div class="col-2">
-                                                            <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
-                                                        </div>
-                                                        <?= form_close(); ?>
-
-                                        </div>
+                                              </div>
                                         <br>
                                     </div>
 
