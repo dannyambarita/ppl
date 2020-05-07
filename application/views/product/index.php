@@ -55,9 +55,13 @@
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('admin') ?>" style="color: white; display:block; text-decoration:none;"><?= $user['name_user']; ?></a></center>
+                    </div>
+                </div>
 
                 <div class="row tom-nav" style="" id="sidebar">
-
                     <div class="col">
                         <center><a href="<?= base_url('editadmin'); ?>" style="color: white; display:block; text-decoration:none;">Edit Profile</a></center>
                     </div>
@@ -83,25 +87,13 @@
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-
                         <center><a href="#" style="color: white; display:block; text-decoration:none;">Testimoni</a></center>
-
                     </div>
                 </div>
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-
-                        <center><a href="<?= base_url('menubar'); ?>" style="color: white; display:block; text-decoration:none;">Menu Bar</a></center>
-
-                    </div>
-                </div>
-
-                <div class="row tom-nav" style="" id="sidebar">
-                    <div class="col">
-
                         <center><a href="#" style="color: white; display:block; text-decoration:none;">User</a></center>
-
                     </div>
                 </div>
 
@@ -149,10 +141,8 @@
 
                                 <div class="col">
                                   <br>
-                                  <button class="btn" id="tombol">
-                                    <a href="<?= base_url('productadd') ?>" style="color: white; display:block; text-decoration:none; font-weight: bold;">+ Add New</a>
-                                  </button><br><br>
-
+                                  <<a class="btn" id="tombol" href="<?= base_url('productadd') ?>" style="color: white; text-decoration:none; font-weight: bold;">+ Add New</a>
+                                  <br><br>
                                 </div>
                             </div>
 

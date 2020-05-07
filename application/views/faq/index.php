@@ -55,6 +55,18 @@
 
                 <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
+                        <center><a href="<?= base_url('admin') ?>" style="color: white; display:block; text-decoration:none;"><?= $user['name_user']; ?></a></center>
+                    </div>
+                </div>
+
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('admin') ?>" style="color: white; display:block; text-decoration:none;"><?= $user['name_user']; ?></a></center>
+                    </div>
+                </div>
+
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
                         <center><a href="<?= base_url('editadmin'); ?>" style="color: white; display:block; text-decoration:none;">Edit Profile</a></center>
                     </div>
                 </div>

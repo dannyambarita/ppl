@@ -7,69 +7,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <style media="screen">
-        #admin {
-            background-color: #4f4f4f;
-        }
+    #sidebar {
+        background-color: #4f4f4f;
+    }
 
-        #admin:hover {
-            background-color: #31A38E;
-        }
+    #sidebar:hover {
+        background-color: #31A38E;
+    }
 
-        #edit {
-            background-color: #4f4f4f;
-        }
+    #admin {
+        background-color: #31A38E;
+    }
 
-        #edit:hover {
-            background-color: #31A38E;
-        }
-
-        #overview {
-            background-color: #4f4f4f;
-        }
-
-        #overview:hover {
-            background-color: #31A38E;
-        }
-
-        #product {
-            background-color: #4f4f4f;
-        }
-
-        #product:hover {
-            background-color: #31A38E;
-        }
-
-        #kategori {
-            background-color: #4f4f4f;
-        }
-
-        #kategori:hover {
-            background-color: #31A38E;
-        }
-
-        #testimoni {
-            background-color: #4f4f4f;
-        }
-
-        #testimoni:hover {
-            background-color: #31A38E;
-        }
-
-        #menubar {
-            background-color: #4f4f4f;
-        }
-
-        #menubar:hover {
-            background-color: #31A38E;
-        }
-
-        #user {
-            background-color: #4f4f4f;
-        }
-
-        #user:hover {
-            background-color: #31A38E;
-        }
+    #admin:hover {
+        background-color: #31A38E;
+    }
 
         .tom-nav {
             padding-top: 10px;
@@ -95,60 +47,72 @@
                 <center><img src="<?= base_url('assets/img/profile/') . $user['image'] ?>" alt="" width="250px"></center>
                 <p></p>
 
-                <div class="row tom-nav" style="" id="overview">
+                <div class="row tom-nav" style="" id="admin">
                     <div class="col">
-                        <center><a href="<?= base_url('admin') ?>" style="color: white;"><?= $user['name_user']; ?></a></center>
+                        <center><a href="<?= base_url('admin') ?>" style="color: white; display:block; text-decoration:none;"><?= $user['name_user']; ?></a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="edit">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;">Edit Profile</a></center>
+                        <center><a href="<?= base_url('editadmin'); ?>" style="color: white;display:block; text-decoration:none;">Edit Profile</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="overview">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">Over View</a></center>
+                        <center><a href="<?= base_url('discount_admin') ?>" style="color: white; display:block; text-decoration:none;">Discount</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="product">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('product') ?>" style="color: white;">Product</center>
+                        <center><a href="<?= base_url('product') ?>" style="color: white; display:block; text-decoration:none;">Product</center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="kategori">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('categories') ?>" style="color: white;">Categories</a></center>
+                        <center><a href="<?= base_url('categories'); ?>" style="color: white; display:block; text-decoration:none;">Categories</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="testimoni">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('testimoni_user') ?>" style="color: white;">Testimoni</a></center>
+                        <center><a href="#" style="color: white; display:block; text-decoration:none;">Testimoni</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="menubar">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('menubar') ?>" style="color: white;">Menu Bar</a></center>
+                        <center><a href="#" style="color: white; display:block; text-decoration:none;">User</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="user">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="#" style="color: white;">User</a></center>
+                        <center><a href="<?= base_url('aboutus_admin'); ?>" style="color: white; display:block; text-decoration:none;">About Us</a></center>
                     </div>
                 </div>
 
-                <div class="row tom-nav" style="" id="user">
+                <div class="row tom-nav" style="" id="sidebar">
                     <div class="col">
-                        <center><a href="<?= base_url('login/logout') ?>" style="color: white;">Logout</a></center>
+                        <center><a href="<?= base_url('location_admin'); ?>" style="color: white; display:block; text-decoration:none;">Location</a></center>
                     </div>
                 </div>
-            </div>
+
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('faq'); ?>" style="color: white; display:block; text-decoration:none;">FAQ</a></center>
+                    </div>
+                </div>
+
+                <div class="row tom-nav" style="" id="sidebar">
+                    <div class="col">
+                        <center><a href="<?= base_url('login/logout') ?>" style="color: white; display:block; text-decoration:none;">Logout</a></center>
+                    </div>
+                </div>
+              </div>
 
             <div class="col-9">
 
