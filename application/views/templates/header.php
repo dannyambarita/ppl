@@ -8,6 +8,9 @@
   <title>Website Jon's Bakery</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+
 
   <style media="screen">
     #signin {
@@ -91,10 +94,9 @@
   <div class="container-fluid">
     <div class="row" style="background-color:#31A38E; padding-top: 4px;padding-bottom:4px;">
       <div class="col-10">
-        <a href="https://twitter.com/"><img src="assets/twitter.svg" alt="" width="27px"></a>
-        <a href="https://facebook.com/"><img src="assets/facebook.svg" alt="" width="27px"></a>
-        <a href="https://instagram.com/"><img src="assets/instagram.svg" alt="" width="27px"></a>
-        <a href="https://google.com/"><img src="assets/google.svg" alt="" width="27px"></a>
+        <a href="https://facebook.com/"><img src="<?php echo base_url ('assets/facebook.svg'); ?>" alt="" width="27px"></a>
+        <a href="https://instagram.com/"><img src="<?php echo base_url ('assets/instagram.svg'); ?>" alt="" width="27px"></a>
+        <a href="https://google.com/"><img src="<?php echo base_url ('assets/google.svg'); ?>" alt="" width="27px"></a>
         <span id="no-hp" style="color:white; padding-left:5px; font-weight: bold;">0852-8964-4888</span>
 
       </div>
@@ -133,7 +135,9 @@
     </div>
 
     <div class="col-2">
-      <center><a href="<?= base_url(); ?>later" class="btn" id="faq">FAQ</a></center>
+
+      <center><a href="<?= base_url(); ?>faqtampil" class="btn" id="faq">FAQ</a></center>
+
     </div>
 
     <div class="col-2">

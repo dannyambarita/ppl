@@ -8,10 +8,12 @@ class Aboutus extends CI_Controller
     $this->load->helper('url');
     $this->load->model('login_model');
     $this->load->model('about_us_model');
+    $data['about'] = $this->about_us_model->about_us();
   }
 
   public function index()
   {
+
     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
     $data['about'] = $this->about_us_model->about_us();
     if ($this->session->userdata('email') === null) {

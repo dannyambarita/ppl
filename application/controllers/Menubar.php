@@ -14,6 +14,7 @@ class Menubar extends CI_Controller
     {
         $data['title'] = 'Admin Dashboard';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $data['about'] = $this->about_us_model->about_us();
 
         $this->form_validation->set_rules('deskripsi', 'Description', 'required|trim');
