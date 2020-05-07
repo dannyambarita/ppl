@@ -28,4 +28,28 @@ class Aboutus_admin extends CI_Controller
             redirect('aboutus');
         }
     }
+
+    public function edit(){
+
+          $deskripsi = $this->input->post('description', true);
+          $currentfoto = $this->input->post('currentfoto', true);
+
+
+      $config['upload_path']          = './assets/img/aboutus/';
+      $config['allowed_types']        = 'gif|jpg|png';
+      $config['file_name']            = "aboutus-" . date("d-m-Y") . "-" . date("h:i:sa");
+      $config['overwrite']			      = true;
+      $config['max_size']             = 1024; // 1MB
+
+        $this->load->library('upload', $config);
+
+        if ($this->upload->do_upload('foto-about')) {
+            $namafoto = $this->upload->data("file_name");
+        }else{
+          $namafoto = $currentfoto;
+        }
+
+        $this->about_us_model->update($deskripsi, $namafoto);
+        redirect('aboutus_admin');
+    }
 }

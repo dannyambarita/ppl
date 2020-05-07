@@ -141,14 +141,17 @@
                               <input type="file" name="filetoko" id="filetoko" class="btn" style=" color: black;">
                               <br><br>
                               <h6 style="color: black">Province</h6>
-                              <textarea name="provinsi" rows="1" cols="20" value="<?= set_value('provinsi'); ?>"></textarea><br><br>
+                              <input type="text" name="provinsi" value="<?= set_value('provinsi'); ?>">
+                              <!-- <textarea name="provinsi" rows="1" cols="20" value="<?= set_value('provinsi'); ?>"></textarea><br><br> -->
                               <br><br>
                               <h6 style="color: black">Address</h6>
                               <textarea name="alamat" rows="2" cols="75" value="<?= set_value('alamat'); ?>"></textarea><br><br>
                               <br><br>
                               <h6 style="color: black">Day</h6>
-                              <textarea name="hari1" rows="1" cols="10" value="<?= set_value('hari1'); ?>"></textarea>
-                              <textarea name="hari2" rows="1" cols="10" value="<?= set_value('hari2'); ?>"></textarea>
+                              <input type="text" name="hari1" value="<?= set_value('hari1'); ?>">
+                              <input type="text" name="hari2" value="<?= set_value('hari2'); ?>">
+                              <!-- <textarea name="hari1" rows="1" cols="10" value="<?= set_value('hari1'); ?>"></textarea>
+                              <textarea name="hari2" rows="1" cols="10" value="<?= set_value('hari2'); ?>"></textarea> -->
                               <br><br>
                               <h6 style="color: black">Times</h6>
                               <input type="time" id="waktu" name="jam1" value="<?= set_value('jam1'); ?>">

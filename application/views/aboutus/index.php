@@ -2,8 +2,9 @@
 <div class="container">
   <div class="row">
     <div class="col-5">
+      <br>
       <?php foreach ($about as $abt) : ?>
-        <center><img src="<?= base_url('assets/') . $abt['image'] ?>" alt="" width="550px"></center>
+        <center><img src="<?= base_url('assets/img/aboutus/') . $abt['image'] ?>" alt="" width="550px"></center>
     </div>
 
     <div class="col-1">

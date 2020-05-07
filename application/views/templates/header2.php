@@ -64,6 +64,7 @@
       background-color: #31A38E;
       color: white;
     }
+    
   </style>
 </head>
 

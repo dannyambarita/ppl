@@ -29,8 +29,12 @@
 
               </div>
 
-              <div class="col-5">
+              <div class="col-4">
                 <img src="<?= base_url('assets/img/toko/') . $l['toko']; ?>" width="470px" >
+              </div>
+
+              <div class="col-1">
+
               </div>
 
               <div class="col-3" style="background-color:#E4E4E4;">

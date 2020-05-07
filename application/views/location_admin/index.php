@@ -149,9 +149,9 @@
                                       <th>Photo</th>
                                       <th>Province</th>
                                       <th>Address</th>
-                                      <th>Day 1</th>
+                                      <th>Day</th>
                                       <!-- <th>Day 2</th> -->
-                                      <th>Time 1</th>
+                                      <th>Time</th>
                                       <!-- <th>Time 2</th> -->
                                       <th>Note</th>
                                       <th>Link</th>

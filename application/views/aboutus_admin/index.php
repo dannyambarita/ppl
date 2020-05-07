@@ -5,8 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title></title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+     <script src="bootstrap/js/bootstrap.js"></script>
+      <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
     <style media="screen">
+
         #sidebar {
             background-color: #4f4f4f;
         }
@@ -140,23 +147,26 @@
 
                                     <br>
 
-                                    <div class="row">
+                                    <div class="row" style="color: black;">
                                         <div class="col">
-                                            <form class="aboutus" method="post" action="<?= base_url('aboutus_admin') ?>">
+                                          <?= form_open_multipart('aboutus_admin/edit'); ?>
                                                 <?php foreach ($about as $abt) : ?>
                                                     <h6 style="color: black">Description</h6>
-                                                    <input type="text" style="color: black" name="description" id="description" name="description" rows="10" cols="130"><?= $abt['deskripsi']; ?></input><br><br>
+                                                    <div class="kotak" style="background-color:white;">
+                                                      <textarea  name="description" id="description"><?= $abt['deskripsi']; ?></textarea>
+                                                    </div>
                                                     <div class="col-sm-9">
-                                                        <div class="custom-file">
+                                                        <div class="custom-file"><br>
                                                             <h6 style="color: black">Current Photo</h6>
                                                             <div class="col-sm-10">
                                                                 <div class="row">
                                                                     <div class="col-sm-3">
                                                                         <img src="<?= base_url('assets/img/aboutus/') . $abt['image'] ?>" class="img-thumbnail">
                                                                     </div>
+                                                                        <input hidden type="text" name="currentfoto" value="<?php echo $abt['image']?>">
                                                                     <div class="col-sm-9">
                                                                         <div class="custom-file">
-                                                                            <button type="file" class="btn" style=" background-color: #31A38E; color: white;">Choose File</button>
+                                                                          <input type="file" name="foto-about" class="btn">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -174,7 +184,8 @@
                                                         <div class="col-2">
                                                             <button type="submit" class="btn" style=" background-color: #31A38E; color: white;">Save</button>
                                                         </div>
-                                            </form>
+                                                        <?= form_close(); ?>
+
                                         </div>
                                         <br>
                                     </div>
@@ -189,9 +200,14 @@
                 </div>
             </div>
 
-            <script src="js/jquery-3.4.1.min.js"></script>
-            <script src="bootstrap/js/bootstrap.js"></script>
 
+            <script type="text/javascript">
+                $(document).ready(function () {
+                  $("#description").editor({
+                      uiLibrary: 'bootstrap'
+                    });
+                  });
+            </script>
 </body>
 
 </html>
